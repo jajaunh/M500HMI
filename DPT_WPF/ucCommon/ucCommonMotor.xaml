@@ -25,12 +25,13 @@
                 <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="119"/>
-                <RowDefinition Height="105"/>
-                <RowDefinition Height="105"/>
-                <RowDefinition Height="105"/>
-                <RowDefinition Height="105"/>
-                <RowDefinition Height="134"/>
+                <RowDefinition Height="89"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
             <Border x:Name="BuildRoomBorder" Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="1" Background="Transparent" BorderBrush="#ffecd0" OpacityMask="Transparent" BorderThickness="2" Margin="10,0,0,0" Width="auto">
                 <Border.InputBindings>
@@ -53,6 +54,17 @@
                     <MouseBinding Gesture="LeftClick" Command="{Binding Rear_Focus, Mode=TwoWay}" />
                 </Border.InputBindings>
             </Border>
+            <Border x:Name="BuildBorder"  Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="5" Background="Transparent" BorderBrush="#ffecd0" OpacityMask="Transparent" BorderThickness="2" Margin="10,4,0,4" Width="auto">
+                <Border.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding Rear_Focus, Mode=TwoWay}" />
+                </Border.InputBindings>
+            </Border>
+            <Border x:Name="Build2Border"  Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="6" Background="Transparent" BorderBrush="#ffecd0" OpacityMask="Transparent" BorderThickness="2" Margin="10,4,0,4" Width="auto">
+                <Border.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding Rear_Focus, Mode=TwoWay}" />
+                </Border.InputBindings>
+            </Border>
+
 
             <Label x:Name="Motor_R_Position" 
                    Content="0" 
@@ -83,6 +95,24 @@
                    Margin="0,30,0,30" 
                    Grid.Column="1" 
                    Grid.Row="4"/>
+            <Label x:Name="Motor_BF_Position" 
+                   Content="0" 
+                   Foreground="#d2d7e1" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center" 
+                   Margin="0,30,0,30" 
+                   Grid.Column="1" 
+                   Grid.Row="5"/>
+            <Label x:Name="Motor_BR_Position" 
+                   Content="0" 
+                   Foreground="#d2d7e1" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center" 
+                   Margin="0,30,0,30" 
+                   Grid.Column="1" 
+                   Grid.Row="6"/>
 
             <Label x:Name="motor_R_Speed"
                    Content="0" 
@@ -113,7 +143,24 @@
                    Margin="0,30,0,30" 
                    Grid.Column="2" 
                    Grid.Row="4"/>
-
+            <Label x:Name="motor_BF_Speed"
+                   Content="0" 
+                   Foreground="#d2d7e1" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center" 
+                   Margin="0,30,0,30" 
+                   Grid.Column="2" 
+                   Grid.Row="5"/>
+            <Label x:Name="motor_BR_Speed"
+                   Content="0" 
+                   Foreground="#d2d7e1" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center" 
+                   Margin="0,30,0,30" 
+                   Grid.Column="2" 
+                   Grid.Row="6"/>
             <Label x:Name="Distance_R"
                    Content="0"
                    Grid.Row="2"
@@ -162,6 +209,38 @@
                 </Label.InputBindings>
             </Label>
 
+            <Label x:Name="Distance_BF"
+                   Content="0"
+                   Grid.Row="5"
+                   Grid.Column="3"
+                   FontSize="20"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center"
+                   Margin="0,25,0,25">
+                <Label.Background>
+                    <ImageBrush ImageSource="/imgTab/4_moter/build-feed room/textbox.png" Stretch="None"/>
+                </Label.Background>
+                <Label.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding MotorDistance_BF_Command}"/>
+                </Label.InputBindings>
+            </Label>
+
+
+            <Label x:Name="Distance_BR"
+                   Content="0"
+                   Grid.Row="6"
+                   Grid.Column="3"
+                   FontSize="20"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center"
+                   Margin="0,25,0,25">
+                <Label.Background>
+                    <ImageBrush ImageSource="/imgTab/4_moter/build-feed room/textbox.png" Stretch="None"/>
+                </Label.Background>
+                <Label.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding MotorDistance_BR_Command}"/>
+                </Label.InputBindings>
+            </Label>
             <Image x:Name="btnimgAddNeg2" Grid.Column="4" Grid.Row="2" Stretch="None" Source="/imgM500/imgLeftArrow.png">
                 <Image.InputBindings>
                     <MouseBinding Gesture="LeftClick" Command="{Binding AddNeg2Command}"></MouseBinding>
@@ -177,6 +256,16 @@
             <Image x:Name="btnimgAddNeg4" Grid.Column="4" Grid.Row="4" Stretch="None" Source="/imgM500/imgLeftArrow.png">
                 <Image.InputBindings>
                     <MouseBinding Gesture="LeftClick" Command="{Binding AddNeg4Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+            <Image x:Name="btnimgAddNeg5" Grid.Column="4" Grid.Row="5" Stretch="None" Source="/imgM500/imgLeftArrow.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding AddNeg5Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+            <Image x:Name="btnimgAddNeg6" Grid.Column="4" Grid.Row="6" Stretch="None" Source="/imgM500/imgLeftArrow.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding AddNeg6Command}"></MouseBinding>
                 </Image.InputBindings>
             </Image>
 
@@ -198,6 +287,18 @@
                 </Image.InputBindings>
             </Image>
 
+            <Image x:Name="btnimgAddPos5" Grid.Column="5" Grid.Row="5" Stretch="None" Source="/imgM500/imgRightArrow.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding AddPos5Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+
+            <Image x:Name="btnimgAddPos6" Grid.Column="5" Grid.Row="6" Stretch="None" Source="/imgM500/imgRightArrow.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding AddPos6Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+
             <Image x:Name="btnimgJogNeg2" Grid.Column="6" Grid.Row="2" Stretch="None" Source="/imgM500/imgLeftArrowDisable.png">
                 <Image.InputBindings>
                     <MouseBinding Gesture="LeftClick" Command="{Binding JogNeg2Command}"></MouseBinding>
@@ -216,6 +317,18 @@
                 </Image.InputBindings>
             </Image>
 
+            <Image x:Name="btnimgJogNeg5" Grid.Column="6" Grid.Row="5" Stretch="None" Source="/imgM500/imgLeftArrowDisable.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding JogNeg5Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+
+            <Image x:Name="btnimgJogNeg6" Grid.Column="6" Grid.Row="6" Stretch="None" Source="/imgM500/imgLeftArrowDisable.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding JogNeg6Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+
             <Image x:Name="btnimgJogPos2" Grid.Column="7" Grid.Row="2" Stretch="None" Source="/imgM500/imgRightArrowDisable.png">
                 <Image.InputBindings>
                     <MouseBinding Gesture="LeftClick" Command="{Binding JogPos2Command}"></MouseBinding>
@@ -231,6 +344,16 @@
             <Image x:Name="btnimgJogPos4" Grid.Column="7" Grid.Row="4" Stretch="None" Source="/imgM500/imgRightArrowDisable.png">
                 <Image.InputBindings>
                     <MouseBinding Gesture="LeftClick" Command="{Binding JogPos4Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+            <Image x:Name="btnimgJogPos5" Grid.Column="7" Grid.Row="5" Stretch="None" Source="/imgM500/imgRightArrowDisable.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding JogPos5Command}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+            <Image x:Name="btnimgJogPos6" Grid.Column="7" Grid.Row="6" Stretch="None" Source="/imgM500/imgRightArrowDisable.png">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding JogPos6Command}"></MouseBinding>
                 </Image.InputBindings>
             </Image>
             <Image x:Name="imgHome_R" Grid.Column="8" Grid.Row="2" Stretch="None">
@@ -255,6 +378,22 @@
                 </Image.Source>
                 <Image.InputBindings>
                     <MouseBinding Gesture="LeftClick" Command="{Binding Motor_S_HomeCommand}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+            <Image x:Name="imgHome_BF" Grid.Column="8" Grid.Row="5" Stretch="None">
+                <Image.Source>
+                    <BitmapImage UriSource="/imgTab/4_moter/build-feed room/btn_home_bage.png"></BitmapImage>
+                </Image.Source>
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding Motor_BF_HomeCommand}"></MouseBinding>
+                </Image.InputBindings>
+            </Image>
+            <Image x:Name="imgHome_BR" Grid.Column="8" Grid.Row="6" Stretch="None">
+                <Image.Source>
+                    <BitmapImage UriSource="/imgTab/4_moter/build-feed room/btn_home_bage.png"></BitmapImage>
+                </Image.Source>
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding Motor_BR_HomeCommand}"></MouseBinding>
                 </Image.InputBindings>
             </Image>
 
@@ -340,6 +479,8 @@
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Content="Recoater" FontSize="18" FontWeight="Bold" Foreground="#a8b2c8" Height="34" HorizontalContentAlignment="Center" Width="87" Margin="18,38,18,37"></Label>
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Content="Build Room &#xD;&#xA; (Up/Down)" FontSize="18" FontWeight="Bold" Foreground="#a8b2c8" Height="58"  HorizontalContentAlignment="Center" Width="113" Margin="10,29,0,19"></Label>
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="4" Content="Supply" FontSize="18" FontWeight="Bold" Foreground="#a8b2c8" Height="34" HorizontalContentAlignment="Center" Width="76" Margin="24,43,23,34"></Label>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="5" Content="Build Room &#xD;&#xA; (Front)" FontSize="18" FontWeight="Bold" Foreground="#a8b2c8" Height="58"  HorizontalContentAlignment="Center" Width="113" Margin="10,29,0,19"></Label>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="6" Content="Build Room &#xD;&#xA; (Rear)" FontSize="18" FontWeight="Bold" Foreground="#a8b2c8" Height="58"  HorizontalContentAlignment="Center" Width="113" Margin="10,29,0,19"></Label>
         </Grid>
         <Image Source="/imgTab/4_moter/title box.png" Width="180" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,16,0,0"/>
         <Label Content="Build/Feed Room" FontSize="18" Foreground="#959fb4" FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="22,25,0,0"/>
