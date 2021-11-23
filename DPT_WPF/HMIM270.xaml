@@ -981,20 +981,60 @@
                     </TabItem.Resources>
                     <Grid>
                         <!--seving sensor-->
-                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="-6,40,-2,617" Grid.RowSpan="1"/>
+                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="6,40,495,617" Grid.RowSpan="1"/>
                         <Grid>
-                            <Label x:Name="SvOxy1" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,157,751,961" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
-                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="234,171,637,980"/>
-                            <ProgressBar x:Name="sv1" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,962" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                            <Label Content="S E N S O R" FontSize="36" Foreground="#eeeeee" Margin="48,65,738,1047"/>
+                            <Label x:Name="SvOxy1" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,138,751,980" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="74,200,798,951"/>
+                            <!--<ProgressBar x:Name="sv1" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,962" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>-->
 
-                            <Label x:Name="SvOxy2" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,290,751,828" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
-                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="234,305,637,846"/>
-                            <ProgressBar x:Name="sv2" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,828" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                            <Label x:Name="SvOxy2" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,242,751,876" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="74,304,797,847"/>
+                            <!--<ProgressBar x:Name="sv2" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,891" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>-->
 
-                            <Label x:Name="SvOxy3" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,434,751,684" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
-                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="234,449,637,702"/>
-                            <ProgressBar x:Name="sv3" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,684" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                            <Label x:Name="SvOxy3" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,342,751,776" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="74,409,797,742"/>
+                            <!--<ProgressBar x:Name="sv3" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,810" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>-->
 
+                            <Label x:Name="SvOxy4" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,443,751,675" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="74,510,797,641"/>
+                            <!--<ProgressBar x:Name="sv4" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,743" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>-->
+
+                            <Label x:Name="SvOxy5" Content="0" FontSize="40" Foreground="#eeeeee" Margin="234,138,540,980" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="282,200,588,951"/>
+                            <!--<ProgressBar x:Name="sv5" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="701,0,0,961" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>-->
+
+                            <Label x:Name="SvOxy6" Content="0" FontSize="40" Foreground="#eeeeee" Margin="234,242,541,876" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="282,304,589,847"/>
+                            <!--<ProgressBar x:Name="sv6" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="701,0,0,891" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>-->
+
+                            <Label x:Name="SvOxy7" Content="0" FontSize="40" Foreground="#eeeeee" Margin="234,342,541,776" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="282,409,589,742"/>
+
+                            <Label x:Name="SvOxy8" Content="0" FontSize="40" Foreground="#eeeeee" Margin="235,443,540,675" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="282,510,589,641"/>
+                        </Grid>
+                        <!--proximity sensor-->
+                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="500,40,12,617" Grid.RowSpan="1"/>
+                        <Grid Margin="500,60,12,635">
+                            <Image x:Name="apsensor" Source="imgTop/green light.png" Width="40" HorizontalAlignment="Left" Margin="42,112,0,335" RenderTransformOrigin="0.5,0.5">
+                            </Image>
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="87,114,274,335"/>
+                            <Image x:Name="apsensor2" Source="imgTop/green light.png" Width="40" HorizontalAlignment="Left" Margin="42,177,0,270" RenderTransformOrigin="0.5,0.5">
+                            </Image>
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="87,179,274,270"/>
+                            <Image x:Name="apsensor3" Source="imgTop/green light.png" Width="40" HorizontalAlignment="Left" Margin="42,239,0,208" RenderTransformOrigin="0.5,0.5">
+                            </Image>
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="87,239,274,210"/>
+                            <Image x:Name="apsensor4" Source="imgTop/green light.png" Width="40" HorizontalAlignment="Left" Margin="261,112,0,335" RenderTransformOrigin="0.5,0.5">
+                            </Image>
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="306,114,54,335"/>
+                            <Image x:Name="apsensor5" Source="imgTop/green light.png" Width="40" HorizontalAlignment="Left" Margin="261,179,0,268" RenderTransformOrigin="0.5,0.5">
+                            </Image>
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="306,181,55,268"/>
+                            <Image x:Name="apsensor6" Source="imgTop/green light.png" Width="40" HorizontalAlignment="Left" Margin="261,239,0,208" RenderTransformOrigin="0.5,0.5">
+                            </Image>
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="307,239,54,210"/>
                         </Grid>
                         <!--seving btn-->
                         <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="6,828,495,90"  />

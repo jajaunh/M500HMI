@@ -293,7 +293,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 986 "..\..\HMIM270.xaml"
+        #line 987 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label SvOxy1;
         
@@ -301,15 +301,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 988 "..\..\HMIM270.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ProgressBar sv1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 990 "..\..\HMIM270.xaml"
+        #line 991 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label SvOxy2;
         
@@ -317,15 +309,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 992 "..\..\HMIM270.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ProgressBar sv2;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 994 "..\..\HMIM270.xaml"
+        #line 995 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label SvOxy3;
         
@@ -333,49 +317,33 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 996 "..\..\HMIM270.xaml"
+        #line 999 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ProgressBar sv3;
+        internal System.Windows.Controls.Label SvOxy4;
         
         #line default
         #line hidden
         
         
-        #line 1004 "..\..\HMIM270.xaml"
+        #line 1003 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_powerbtn;
+        internal System.Windows.Controls.Label SvOxy5;
         
         #line default
         #line hidden
         
         
-        #line 1005 "..\..\HMIM270.xaml"
+        #line 1007 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_powerbtn_on;
+        internal System.Windows.Controls.Label SvOxy6;
         
         #line default
         #line hidden
         
         
-        #line 1006 "..\..\HMIM270.xaml"
+        #line 1011 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label sv_power;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 1012 "..\..\HMIM270.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_gasbtn;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 1013 "..\..\HMIM270.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_gasbtn_on;
+        internal System.Windows.Controls.Label SvOxy7;
         
         #line default
         #line hidden
@@ -383,7 +351,7 @@ namespace DPT_WPF {
         
         #line 1014 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label sv_gas;
+        internal System.Windows.Controls.Label SvOxy8;
         
         #line default
         #line hidden
@@ -391,39 +359,47 @@ namespace DPT_WPF {
         
         #line 1020 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_supplybtn;
+        internal System.Windows.Controls.Image apsensor;
         
         #line default
         #line hidden
         
         
-        #line 1021 "..\..\HMIM270.xaml"
+        #line 1023 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_supplybtn_on;
+        internal System.Windows.Controls.Image apsensor2;
         
         #line default
         #line hidden
         
         
-        #line 1022 "..\..\HMIM270.xaml"
+        #line 1026 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label sv_supply;
+        internal System.Windows.Controls.Image apsensor3;
         
         #line default
         #line hidden
         
         
-        #line 1033 "..\..\HMIM270.xaml"
+        #line 1029 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label SdiffPer_main;
+        internal System.Windows.Controls.Image apsensor4;
         
         #line default
         #line hidden
         
         
-        #line 1037 "..\..\HMIM270.xaml"
+        #line 1032 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label SdiffPer_sub;
+        internal System.Windows.Controls.Image apsensor5;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1035 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image apsensor6;
         
         #line default
         #line hidden
@@ -431,7 +407,7 @@ namespace DPT_WPF {
         
         #line 1044 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_alarm1;
+        internal System.Windows.Controls.Image sv_powerbtn;
         
         #line default
         #line hidden
@@ -439,7 +415,7 @@ namespace DPT_WPF {
         
         #line 1045 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_alarm2;
+        internal System.Windows.Controls.Image sv_powerbtn_on;
         
         #line default
         #line hidden
@@ -447,15 +423,15 @@ namespace DPT_WPF {
         
         #line 1046 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_alarm3;
+        internal System.Windows.Controls.Label sv_power;
         
         #line default
         #line hidden
         
         
-        #line 1048 "..\..\HMIM270.xaml"
+        #line 1052 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image sv_alarm_on1;
+        internal System.Windows.Controls.Image sv_gasbtn;
         
         #line default
         #line hidden
@@ -463,13 +439,101 @@ namespace DPT_WPF {
         
         #line 1053 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image sv_gasbtn_on;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1054 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label sv_gas;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1060 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image sv_supplybtn;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1061 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image sv_supplybtn_on;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1062 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label sv_supply;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1073 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label SdiffPer_main;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1077 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label SdiffPer_sub;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1084 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image sv_alarm1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1085 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image sv_alarm2;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1086 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image sv_alarm3;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1088 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image sv_alarm_on1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 1093 "..\..\HMIM270.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image sv_alarm_on2;
         
         #line default
         #line hidden
         
         
-        #line 1058 "..\..\HMIM270.xaml"
+        #line 1098 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image sv_alarm_on3;
         
@@ -477,7 +541,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1163 "..\..\HMIM270.xaml"
+        #line 1203 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock lbltime;
         
@@ -485,7 +549,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1172 "..\..\HMIM270.xaml"
+        #line 1212 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ProgressBar progress;
         
@@ -493,7 +557,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1183 "..\..\HMIM270.xaml"
+        #line 1223 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Canvas myCanvas;
         
@@ -501,7 +565,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1192 "..\..\HMIM270.xaml"
+        #line 1232 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Shapes.Path polyInline;
         
@@ -509,7 +573,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1193 "..\..\HMIM270.xaml"
+        #line 1233 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Shapes.Path polyOutline;
         
@@ -517,7 +581,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1204 "..\..\HMIM270.xaml"
+        #line 1244 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Slider slLayer1;
         
@@ -525,7 +589,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1207 "..\..\HMIM270.xaml"
+        #line 1247 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock txtCurrentLayer;
         
@@ -533,7 +597,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1211 "..\..\HMIM270.xaml"
+        #line 1251 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock txtTotalLayer;
         
@@ -541,7 +605,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1222 "..\..\HMIM270.xaml"
+        #line 1262 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListView lvFile;
         
@@ -549,7 +613,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1268 "..\..\HMIM270.xaml"
+        #line 1308 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.GridViewColumn chMultiFile;
         
@@ -557,7 +621,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1283 "..\..\HMIM270.xaml"
+        #line 1323 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal DPT_WPF.imgLoading.LoadingAnimation aniLoading;
         
@@ -565,7 +629,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1286 "..\..\HMIM270.xaml"
+        #line 1326 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image imgStart;
         
@@ -573,7 +637,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1300 "..\..\HMIM270.xaml"
+        #line 1340 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image imgPrintStart;
         
@@ -581,7 +645,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1313 "..\..\HMIM270.xaml"
+        #line 1353 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image imgPrintPause;
         
@@ -589,7 +653,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1327 "..\..\HMIM270.xaml"
+        #line 1367 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image imgPrintResume;
         
@@ -597,7 +661,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1341 "..\..\HMIM270.xaml"
+        #line 1381 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image imgPrintStop;
         
@@ -605,7 +669,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1355 "..\..\HMIM270.xaml"
+        #line 1395 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image imgPrintFinish;
         
@@ -613,7 +677,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1367 "..\..\HMIM270.xaml"
+        #line 1407 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image btnReset;
         
@@ -621,7 +685,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1463 "..\..\HMIM270.xaml"
+        #line 1503 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PlatePressure1;
         
@@ -629,7 +693,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1474 "..\..\HMIM270.xaml"
+        #line 1514 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label VacuumPressure1;
         
@@ -637,7 +701,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1486 "..\..\HMIM270.xaml"
+        #line 1526 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label VacuumPressure2;
         
@@ -645,7 +709,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1498 "..\..\HMIM270.xaml"
+        #line 1538 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PlatePressure2;
         
@@ -653,7 +717,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1510 "..\..\HMIM270.xaml"
+        #line 1550 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label GasSupplyLine1Pressure;
         
@@ -661,7 +725,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1522 "..\..\HMIM270.xaml"
+        #line 1562 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label FilterMainPressureSensor;
         
@@ -669,7 +733,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1534 "..\..\HMIM270.xaml"
+        #line 1574 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label FilterSub1PressureSensor;
         
@@ -677,7 +741,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1546 "..\..\HMIM270.xaml"
+        #line 1586 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label FilterSub2PressureSensor;
         
@@ -685,7 +749,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1558 "..\..\HMIM270.xaml"
+        #line 1598 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label GasSupplyLine2Pressure;
         
@@ -693,7 +757,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1570 "..\..\HMIM270.xaml"
+        #line 1610 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpMainPressureSensor;
         
@@ -701,7 +765,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1582 "..\..\HMIM270.xaml"
+        #line 1622 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpSubPressureSensor;
         
@@ -709,7 +773,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1594 "..\..\HMIM270.xaml"
+        #line 1634 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label MainAirLine1Pressure;
         
@@ -717,7 +781,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1606 "..\..\HMIM270.xaml"
+        #line 1646 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label VacuumGenerator1Flow;
         
@@ -725,7 +789,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1618 "..\..\HMIM270.xaml"
+        #line 1658 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label VacuumGenerator2Flow;
         
@@ -733,7 +797,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1630 "..\..\HMIM270.xaml"
+        #line 1670 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label HoldClampFlow;
         
@@ -741,7 +805,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1642 "..\..\HMIM270.xaml"
+        #line 1682 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label MainAirLine2Pressure;
         
@@ -749,7 +813,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1654 "..\..\HMIM270.xaml"
+        #line 1694 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label GasSupplyLine1Flow;
         
@@ -757,7 +821,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1666 "..\..\HMIM270.xaml"
+        #line 1706 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label GasSupplyLine2Flow;
         
@@ -765,7 +829,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1678 "..\..\HMIM270.xaml"
+        #line 1718 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpMainWindSpeedSensor;
         
@@ -773,7 +837,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1690 "..\..\HMIM270.xaml"
+        #line 1730 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpSubWindSpeedSensor;
         
@@ -781,7 +845,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1702 "..\..\HMIM270.xaml"
+        #line 1742 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label ChamberOxygenSensor;
         
@@ -789,7 +853,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1714 "..\..\HMIM270.xaml"
+        #line 1754 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpMainOxygenSensor;
         
@@ -797,7 +861,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1726 "..\..\HMIM270.xaml"
+        #line 1766 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpSubOxygenSensor;
         
@@ -805,7 +869,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1738 "..\..\HMIM270.xaml"
+        #line 1778 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpMainDewPointSensor;
         
@@ -813,7 +877,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1750 "..\..\HMIM270.xaml"
+        #line 1790 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpSubDewPointSensor;
         
@@ -821,7 +885,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1762 "..\..\HMIM270.xaml"
+        #line 1802 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpMainTempSensor;
         
@@ -829,7 +893,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1774 "..\..\HMIM270.xaml"
+        #line 1814 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpSubTempSensor;
         
@@ -837,7 +901,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1786 "..\..\HMIM270.xaml"
+        #line 1826 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpMainMotorCurrent;
         
@@ -845,7 +909,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1798 "..\..\HMIM270.xaml"
+        #line 1838 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpMainRelativePressure;
         
@@ -853,7 +917,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1810 "..\..\HMIM270.xaml"
+        #line 1850 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpSubMotorCurrent;
         
@@ -861,7 +925,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1822 "..\..\HMIM270.xaml"
+        #line 1862 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label PumpSubRelativePressure;
         
@@ -869,7 +933,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1940 "..\..\HMIM270.xaml"
+        #line 1980 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Border BuildRoomBorder;
         
@@ -877,7 +941,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1942 "..\..\HMIM270.xaml"
+        #line 1982 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Border RecotorBorder;
         
@@ -885,7 +949,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1944 "..\..\HMIM270.xaml"
+        #line 1984 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Border FrontBorder;
         
@@ -893,7 +957,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 1946 "..\..\HMIM270.xaml"
+        #line 1986 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Border RearBorder;
         
@@ -901,7 +965,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2046 "..\..\HMIM270.xaml"
+        #line 2086 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Vel_R;
         
@@ -909,7 +973,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2061 "..\..\HMIM270.xaml"
+        #line 2101 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Vel_Z;
         
@@ -917,7 +981,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2076 "..\..\HMIM270.xaml"
+        #line 2116 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Vel_S;
         
@@ -925,7 +989,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2091 "..\..\HMIM270.xaml"
+        #line 2131 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Acc_R;
         
@@ -933,7 +997,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2107 "..\..\HMIM270.xaml"
+        #line 2147 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Acc_Z;
         
@@ -941,7 +1005,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2123 "..\..\HMIM270.xaml"
+        #line 2163 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Acc_S;
         
@@ -949,7 +1013,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2139 "..\..\HMIM270.xaml"
+        #line 2179 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dec_R;
         
@@ -957,7 +1021,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2155 "..\..\HMIM270.xaml"
+        #line 2195 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dec_Z;
         
@@ -965,7 +1029,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2171 "..\..\HMIM270.xaml"
+        #line 2211 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dec_S;
         
@@ -973,7 +1037,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2187 "..\..\HMIM270.xaml"
+        #line 2227 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dis_R;
         
@@ -981,7 +1045,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2203 "..\..\HMIM270.xaml"
+        #line 2243 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dis_Z;
         
@@ -989,7 +1053,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2219 "..\..\HMIM270.xaml"
+        #line 2259 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dis_S;
         
@@ -997,7 +1061,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2235 "..\..\HMIM270.xaml"
+        #line 2275 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label TP_R;
         
@@ -1005,7 +1069,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2251 "..\..\HMIM270.xaml"
+        #line 2291 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label TP_Z;
         
@@ -1013,7 +1077,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2267 "..\..\HMIM270.xaml"
+        #line 2307 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label TP_S;
         
@@ -1021,7 +1085,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2283 "..\..\HMIM270.xaml"
+        #line 2323 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dir_R;
         
@@ -1029,7 +1093,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2299 "..\..\HMIM270.xaml"
+        #line 2339 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dir_Z;
         
@@ -1037,7 +1101,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2315 "..\..\HMIM270.xaml"
+        #line 2355 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Dir_S;
         
@@ -1045,7 +1109,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2331 "..\..\HMIM270.xaml"
+        #line 2371 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Order_R;
         
@@ -1053,7 +1117,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2347 "..\..\HMIM270.xaml"
+        #line 2387 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Order_Z;
         
@@ -1061,7 +1125,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2363 "..\..\HMIM270.xaml"
+        #line 2403 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Order_S;
         
@@ -1069,7 +1133,7 @@ namespace DPT_WPF {
         #line hidden
         
         
-        #line 2483 "..\..\HMIM270.xaml"
+        #line 2523 "..\..\HMIM270.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Shapes.Rectangle darkbackground;
         
@@ -1210,312 +1274,336 @@ namespace DPT_WPF {
             this.SvOxy1 = ((System.Windows.Controls.Label)(target));
             return;
             case 33:
-            this.sv1 = ((System.Windows.Controls.ProgressBar)(target));
-            return;
-            case 34:
             this.SvOxy2 = ((System.Windows.Controls.Label)(target));
             return;
-            case 35:
-            this.sv2 = ((System.Windows.Controls.ProgressBar)(target));
-            return;
-            case 36:
+            case 34:
             this.SvOxy3 = ((System.Windows.Controls.Label)(target));
             return;
+            case 35:
+            this.SvOxy4 = ((System.Windows.Controls.Label)(target));
+            return;
+            case 36:
+            this.SvOxy5 = ((System.Windows.Controls.Label)(target));
+            return;
             case 37:
-            this.sv3 = ((System.Windows.Controls.ProgressBar)(target));
+            this.SvOxy6 = ((System.Windows.Controls.Label)(target));
             return;
             case 38:
-            this.sv_powerbtn = ((System.Windows.Controls.Image)(target));
+            this.SvOxy7 = ((System.Windows.Controls.Label)(target));
             return;
             case 39:
-            this.sv_powerbtn_on = ((System.Windows.Controls.Image)(target));
+            this.SvOxy8 = ((System.Windows.Controls.Label)(target));
             return;
             case 40:
-            this.sv_power = ((System.Windows.Controls.Label)(target));
+            this.apsensor = ((System.Windows.Controls.Image)(target));
             return;
             case 41:
-            this.sv_gasbtn = ((System.Windows.Controls.Image)(target));
+            this.apsensor2 = ((System.Windows.Controls.Image)(target));
             return;
             case 42:
-            this.sv_gasbtn_on = ((System.Windows.Controls.Image)(target));
+            this.apsensor3 = ((System.Windows.Controls.Image)(target));
             return;
             case 43:
-            this.sv_gas = ((System.Windows.Controls.Label)(target));
+            this.apsensor4 = ((System.Windows.Controls.Image)(target));
             return;
             case 44:
-            this.sv_supplybtn = ((System.Windows.Controls.Image)(target));
+            this.apsensor5 = ((System.Windows.Controls.Image)(target));
             return;
             case 45:
-            this.sv_supplybtn_on = ((System.Windows.Controls.Image)(target));
+            this.apsensor6 = ((System.Windows.Controls.Image)(target));
             return;
             case 46:
-            this.sv_supply = ((System.Windows.Controls.Label)(target));
+            this.sv_powerbtn = ((System.Windows.Controls.Image)(target));
             return;
             case 47:
-            this.SdiffPer_main = ((System.Windows.Controls.Label)(target));
+            this.sv_powerbtn_on = ((System.Windows.Controls.Image)(target));
             return;
             case 48:
-            this.SdiffPer_sub = ((System.Windows.Controls.Label)(target));
+            this.sv_power = ((System.Windows.Controls.Label)(target));
             return;
             case 49:
-            this.sv_alarm1 = ((System.Windows.Controls.Image)(target));
+            this.sv_gasbtn = ((System.Windows.Controls.Image)(target));
             return;
             case 50:
-            this.sv_alarm2 = ((System.Windows.Controls.Image)(target));
+            this.sv_gasbtn_on = ((System.Windows.Controls.Image)(target));
             return;
             case 51:
-            this.sv_alarm3 = ((System.Windows.Controls.Image)(target));
+            this.sv_gas = ((System.Windows.Controls.Label)(target));
             return;
             case 52:
-            this.sv_alarm_on1 = ((System.Windows.Controls.Image)(target));
+            this.sv_supplybtn = ((System.Windows.Controls.Image)(target));
             return;
             case 53:
-            this.sv_alarm_on2 = ((System.Windows.Controls.Image)(target));
+            this.sv_supplybtn_on = ((System.Windows.Controls.Image)(target));
             return;
             case 54:
-            this.sv_alarm_on3 = ((System.Windows.Controls.Image)(target));
+            this.sv_supply = ((System.Windows.Controls.Label)(target));
             return;
             case 55:
-            this.lbltime = ((System.Windows.Controls.TextBlock)(target));
+            this.SdiffPer_main = ((System.Windows.Controls.Label)(target));
             return;
             case 56:
-            this.progress = ((System.Windows.Controls.ProgressBar)(target));
+            this.SdiffPer_sub = ((System.Windows.Controls.Label)(target));
             return;
             case 57:
-            this.myCanvas = ((System.Windows.Controls.Canvas)(target));
+            this.sv_alarm1 = ((System.Windows.Controls.Image)(target));
             return;
             case 58:
-            this.polyInline = ((System.Windows.Shapes.Path)(target));
+            this.sv_alarm2 = ((System.Windows.Controls.Image)(target));
             return;
             case 59:
-            this.polyOutline = ((System.Windows.Shapes.Path)(target));
+            this.sv_alarm3 = ((System.Windows.Controls.Image)(target));
             return;
             case 60:
+            this.sv_alarm_on1 = ((System.Windows.Controls.Image)(target));
+            return;
+            case 61:
+            this.sv_alarm_on2 = ((System.Windows.Controls.Image)(target));
+            return;
+            case 62:
+            this.sv_alarm_on3 = ((System.Windows.Controls.Image)(target));
+            return;
+            case 63:
+            this.lbltime = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            case 64:
+            this.progress = ((System.Windows.Controls.ProgressBar)(target));
+            return;
+            case 65:
+            this.myCanvas = ((System.Windows.Controls.Canvas)(target));
+            return;
+            case 66:
+            this.polyInline = ((System.Windows.Shapes.Path)(target));
+            return;
+            case 67:
+            this.polyOutline = ((System.Windows.Shapes.Path)(target));
+            return;
+            case 68:
             this.slLayer1 = ((System.Windows.Controls.Slider)(target));
             
-            #line 1204 "..\..\HMIM270.xaml"
+            #line 1244 "..\..\HMIM270.xaml"
             this.slLayer1.PreviewMouseUp += new System.Windows.Input.MouseButtonEventHandler(this.slLayer1_PreviewMouseUp);
             
             #line default
             #line hidden
             
-            #line 1204 "..\..\HMIM270.xaml"
+            #line 1244 "..\..\HMIM270.xaml"
             this.slLayer1.ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.slLayer1_ValueChanged);
             
             #line default
             #line hidden
             return;
-            case 61:
+            case 69:
             this.txtCurrentLayer = ((System.Windows.Controls.TextBlock)(target));
             return;
-            case 62:
+            case 70:
             this.txtTotalLayer = ((System.Windows.Controls.TextBlock)(target));
             return;
-            case 63:
+            case 71:
             this.lvFile = ((System.Windows.Controls.ListView)(target));
             
-            #line 1222 "..\..\HMIM270.xaml"
+            #line 1262 "..\..\HMIM270.xaml"
             this.lvFile.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.lvFile_SelectionChanged);
             
             #line default
             #line hidden
             return;
-            case 64:
+            case 72:
             this.chMultiFile = ((System.Windows.Controls.GridViewColumn)(target));
             return;
-            case 65:
+            case 73:
             this.aniLoading = ((DPT_WPF.imgLoading.LoadingAnimation)(target));
             return;
-            case 66:
+            case 74:
             this.imgStart = ((System.Windows.Controls.Image)(target));
             return;
-            case 67:
+            case 75:
             this.imgPrintStart = ((System.Windows.Controls.Image)(target));
             return;
-            case 68:
+            case 76:
             this.imgPrintPause = ((System.Windows.Controls.Image)(target));
             return;
-            case 69:
+            case 77:
             this.imgPrintResume = ((System.Windows.Controls.Image)(target));
             return;
-            case 70:
+            case 78:
             this.imgPrintStop = ((System.Windows.Controls.Image)(target));
             return;
-            case 71:
+            case 79:
             this.imgPrintFinish = ((System.Windows.Controls.Image)(target));
             return;
-            case 72:
+            case 80:
             this.btnReset = ((System.Windows.Controls.Image)(target));
             return;
-            case 73:
+            case 81:
             this.PlatePressure1 = ((System.Windows.Controls.Label)(target));
             return;
-            case 74:
+            case 82:
             this.VacuumPressure1 = ((System.Windows.Controls.Label)(target));
             return;
-            case 75:
+            case 83:
             this.VacuumPressure2 = ((System.Windows.Controls.Label)(target));
             return;
-            case 76:
+            case 84:
             this.PlatePressure2 = ((System.Windows.Controls.Label)(target));
             return;
-            case 77:
+            case 85:
             this.GasSupplyLine1Pressure = ((System.Windows.Controls.Label)(target));
             return;
-            case 78:
+            case 86:
             this.FilterMainPressureSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 79:
+            case 87:
             this.FilterSub1PressureSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 80:
+            case 88:
             this.FilterSub2PressureSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 81:
+            case 89:
             this.GasSupplyLine2Pressure = ((System.Windows.Controls.Label)(target));
             return;
-            case 82:
+            case 90:
             this.PumpMainPressureSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 83:
+            case 91:
             this.PumpSubPressureSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 84:
+            case 92:
             this.MainAirLine1Pressure = ((System.Windows.Controls.Label)(target));
             return;
-            case 85:
+            case 93:
             this.VacuumGenerator1Flow = ((System.Windows.Controls.Label)(target));
             return;
-            case 86:
+            case 94:
             this.VacuumGenerator2Flow = ((System.Windows.Controls.Label)(target));
             return;
-            case 87:
+            case 95:
             this.HoldClampFlow = ((System.Windows.Controls.Label)(target));
             return;
-            case 88:
+            case 96:
             this.MainAirLine2Pressure = ((System.Windows.Controls.Label)(target));
             return;
-            case 89:
+            case 97:
             this.GasSupplyLine1Flow = ((System.Windows.Controls.Label)(target));
             return;
-            case 90:
+            case 98:
             this.GasSupplyLine2Flow = ((System.Windows.Controls.Label)(target));
             return;
-            case 91:
+            case 99:
             this.PumpMainWindSpeedSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 92:
+            case 100:
             this.PumpSubWindSpeedSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 93:
+            case 101:
             this.ChamberOxygenSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 94:
+            case 102:
             this.PumpMainOxygenSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 95:
+            case 103:
             this.PumpSubOxygenSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 96:
+            case 104:
             this.PumpMainDewPointSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 97:
+            case 105:
             this.PumpSubDewPointSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 98:
+            case 106:
             this.PumpMainTempSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 99:
+            case 107:
             this.PumpSubTempSensor = ((System.Windows.Controls.Label)(target));
             return;
-            case 100:
+            case 108:
             this.PumpMainMotorCurrent = ((System.Windows.Controls.Label)(target));
             return;
-            case 101:
+            case 109:
             this.PumpMainRelativePressure = ((System.Windows.Controls.Label)(target));
             return;
-            case 102:
+            case 110:
             this.PumpSubMotorCurrent = ((System.Windows.Controls.Label)(target));
             return;
-            case 103:
+            case 111:
             this.PumpSubRelativePressure = ((System.Windows.Controls.Label)(target));
             return;
-            case 104:
+            case 112:
             this.BuildRoomBorder = ((System.Windows.Controls.Border)(target));
             return;
-            case 105:
+            case 113:
             this.RecotorBorder = ((System.Windows.Controls.Border)(target));
             return;
-            case 106:
+            case 114:
             this.FrontBorder = ((System.Windows.Controls.Border)(target));
             return;
-            case 107:
+            case 115:
             this.RearBorder = ((System.Windows.Controls.Border)(target));
             return;
-            case 108:
+            case 116:
             this.Vel_R = ((System.Windows.Controls.Label)(target));
             return;
-            case 109:
+            case 117:
             this.Vel_Z = ((System.Windows.Controls.Label)(target));
             return;
-            case 110:
+            case 118:
             this.Vel_S = ((System.Windows.Controls.Label)(target));
             return;
-            case 111:
+            case 119:
             this.Acc_R = ((System.Windows.Controls.Label)(target));
             return;
-            case 112:
+            case 120:
             this.Acc_Z = ((System.Windows.Controls.Label)(target));
             return;
-            case 113:
+            case 121:
             this.Acc_S = ((System.Windows.Controls.Label)(target));
             return;
-            case 114:
+            case 122:
             this.Dec_R = ((System.Windows.Controls.Label)(target));
             return;
-            case 115:
+            case 123:
             this.Dec_Z = ((System.Windows.Controls.Label)(target));
             return;
-            case 116:
+            case 124:
             this.Dec_S = ((System.Windows.Controls.Label)(target));
             return;
-            case 117:
+            case 125:
             this.Dis_R = ((System.Windows.Controls.Label)(target));
             return;
-            case 118:
+            case 126:
             this.Dis_Z = ((System.Windows.Controls.Label)(target));
             return;
-            case 119:
+            case 127:
             this.Dis_S = ((System.Windows.Controls.Label)(target));
             return;
-            case 120:
+            case 128:
             this.TP_R = ((System.Windows.Controls.Label)(target));
             return;
-            case 121:
+            case 129:
             this.TP_Z = ((System.Windows.Controls.Label)(target));
             return;
-            case 122:
+            case 130:
             this.TP_S = ((System.Windows.Controls.Label)(target));
             return;
-            case 123:
+            case 131:
             this.Dir_R = ((System.Windows.Controls.Label)(target));
             return;
-            case 124:
+            case 132:
             this.Dir_Z = ((System.Windows.Controls.Label)(target));
             return;
-            case 125:
+            case 133:
             this.Dir_S = ((System.Windows.Controls.Label)(target));
             return;
-            case 126:
+            case 134:
             this.Order_R = ((System.Windows.Controls.Label)(target));
             return;
-            case 127:
+            case 135:
             this.Order_Z = ((System.Windows.Controls.Label)(target));
             return;
-            case 128:
+            case 136:
             this.Order_S = ((System.Windows.Controls.Label)(target));
             return;
-            case 129:
+            case 137:
             this.darkbackground = ((System.Windows.Shapes.Rectangle)(target));
             return;
             }
