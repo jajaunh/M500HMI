@@ -1,0 +1,168 @@
+﻿<UserControl x:Class="DPT_WPF.ucCommon.ucCommonPump"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="746" d:DesignWidth="964">
+    <Grid>
+        <Image Source="/imgTab/3_pump/box.png" Width="964" Height="746"/>
+
+        <!--Pump-->
+        <Image Source="/imgTab/3_pump/baseshape.png" Width="300" Height="300" Margin="0,0,600,300"/>
+        <Image Source="/imgTab/3_pump/pumpimage.png" Width="50" Height="50" Margin="0,0,630,400"/>
+        <Label x:Name="MainPumpSetValue"
+               Content="0"
+               FontSize="40"
+               Width="170"
+               FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold"
+               Height="50"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Margin="0,0,630,285">
+        </Label>
+        <Image Source="/imgTab/3_pump/+.png" Width="30" Height="40" Margin="0,0,635,510">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding MainPumpPlusCommand}"/>
+            </Image.InputBindings>
+        </Image>
+        <Image Source="/imgTab/3_pump/-.png" Width="30" Height="40" Margin="0,0,635,80">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding MainPumpMinusCommand}"/>
+            </Image.InputBindings>
+        </Image>
+        
+        <Image Source="/imgTab/3_pump/centerinfor.png" Width="250" Height="250" Margin="0,0,190,290"/>
+        <Image Source="/imgTab/3_pump/wind.png" Width="50" Height="50" Margin="0,0,190,440"/>
+        <Label x:Name="MainPumpActValue" 
+               Content="0" 
+               FontSize="40" 
+               FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Width="190"
+               Height="60"
+               Margin="0,0,190,280"/>
+        <Label Content="Main Value" 
+               FontSize="25" 
+               FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Width="200"
+               Height="40"
+               Margin="0,0,190,120"/>
+        <Image x:Name="BtnMainPumpControl" Source="/imgM500/print_btn_start_enable.png" Width="158" Height="70" Margin="200,0,0,300" Visibility="Visible">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding MainPumpControlCommand}"/>
+            </Image.InputBindings>
+        </Image>
+        <Image x:Name="BtnMainPumpStop" Source="/imgM500/print_btn_stop_enable.png" Width="158" Height="70" Margin="200,0,0,300" Visibility="Collapsed">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding MainPumpStopCommand}"/>
+            </Image.InputBindings>
+        </Image>
+
+        <Image Source="/imgTab/3_pump/baseshape.png" Width="300" Height="300" Margin="0,260,600,0"/>
+        <Image Source="/imgTab/3_pump/pumpimage.png" Width="50" Height="50" Margin="0,170,630,0"/>
+        <Label x:Name="SubPumpSetValue"
+               Content="0"
+               FontSize="40"
+               Width="170"
+               FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold"
+               Height="50"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Margin="0,280,630,0">
+        </Label>
+        <Image Source="/imgTab/3_pump/+.png" Width="30" Height="40" Margin="0,50,635,0">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding SubPumpPlusCommand}"/>
+            </Image.InputBindings>
+        </Image>
+        <Image Source="/imgTab/3_pump/-.png" Width="30" Height="40" Margin="0,480,635,0">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding SubPumpMinusCommand}"/>
+            </Image.InputBindings>
+        </Image>
+        
+        <Image Source="/imgTab/3_pump/centerinfor.png" Width="250" Height="250" Margin="0,250,190,0"/>
+        <Image Source="/imgTab/3_pump/wind.png" Width="50" Height="50" Margin="0,100,190,0"/>
+        <Label x:Name="SubPumpActValue" 
+               Content="0" 
+               FontSize="40" 
+               FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Width="190"
+               Height="60"
+               Margin="0,260,190,0"/>
+        <Label Content="Sub Value" 
+               FontSize="25" 
+               FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Width="200"
+               Height="40"
+               Margin="0,420,190,0">
+        </Label>
+
+        <Image x:Name="BtnSubPumpControl" Source="/imgM500/print_btn_start_enable.png" Width="158" Height="70" Margin="200,250,0,0" Visibility="Visible">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding SubPumpControlCommand}"/>
+            </Image.InputBindings>
+        </Image>
+        <Image x:Name="BtnSubPumpStop" Source="/imgM500/print_btn_stop_enable.png" Width="158" Height="70" Margin="200,250,0,0" Visibility="Collapsed">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding SubPumpStopCommand}"/>
+            </Image.InputBindings>
+        </Image>
+
+        <!--Filter-->
+        <Image Source="/imgTab/3_pump/filterbase.png" Width="104" Height="153" Margin="550,0,0,250">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding Filter1Command}"/>
+            </Image.InputBindings>
+        </Image>
+        <Label Content="70%" 
+               FontSize="35" 
+               Foreground="#eeeeee" 
+               Margin="550,0,0,220" 
+               Height="50" 
+               Width="90" 
+               HorizontalContentAlignment="Center"
+               >
+            <Label.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding Filter1Command}"/>
+            </Label.InputBindings>
+        </Label>
+
+        <Image Source="/imgTab/3_pump/filterbase.png" Width="104" Height="153" Margin="790,0,0,250">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding Filter2Command}"/>
+            </Image.InputBindings>
+        </Image>
+        <Label Content="30%" 
+               FontSize="35" 
+               Foreground="#eeeeee" 
+               Margin="790,0,0,220" 
+               Height="50" 
+               Width="90" 
+               HorizontalContentAlignment="Center"
+               >
+            <Label.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding Filter2Command}"/>
+            </Label.InputBindings>
+        </Label>
+
+        <Image x:Name="BtnFilterEnable" Source="/imgTab/3_pump/botton.png" Width="141" Height="50" Margin="670,0,0,0">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding FilterEnableCommand}"/>
+            </Image.InputBindings>
+        </Image>
+
+        
+        
+
+    </Grid>
+</UserControl>

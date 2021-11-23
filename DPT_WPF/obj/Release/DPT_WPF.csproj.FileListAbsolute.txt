@@ -1,0 +1,297 @@
+C:\github500\M500\DPT_WPF\bin\Release\DPT_WPF.exe.config
+C:\github500\M500\DPT_WPF\bin\Release\DPT_WPF.exe
+C:\github500\M500\DPT_WPF\bin\Release\DPT_WPF.pdb
+C:\github500\M500\DPT_WPF\bin\Release\Caliburn.Micro.dll
+C:\github500\M500\DPT_WPF\bin\Release\Caliburn.Micro.Platform.Core.dll
+C:\github500\M500\DPT_WPF\bin\Release\Caliburn.Micro.Platform.dll
+C:\github500\M500\DPT_WPF\bin\Release\Kepware.ClientAce.BrowseControls.dll
+C:\github500\M500\DPT_WPF\bin\Release\Kepware.ClientAce.DA_Junction.dll
+C:\github500\M500\DPT_WPF\bin\Release\Kepware.ClientAce.KEPServerExControls.dll
+C:\github500\M500\DPT_WPF\bin\Release\Kepware.ClientAce.OpcClient.dll
+C:\github500\M500\DPT_WPF\bin\Release\Kepware.ClientAce.VS2005AddIn.dll
+C:\github500\M500\DPT_WPF\bin\Release\LiveCharts.dll
+C:\github500\M500\DPT_WPF\bin\Release\LiveCharts.Wpf.dll
+C:\github500\M500\DPT_WPF\bin\Release\MaterialDesignColors.dll
+C:\github500\M500\DPT_WPF\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\github500\M500\DPT_WPF\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+C:\github500\M500\DPT_WPF\bin\Release\System.Windows.Controls.Layout.Toolkit.dll
+C:\github500\M500\DPT_WPF\bin\Release\System.Windows.Interactivity.dll
+C:\github500\M500\DPT_WPF\bin\Release\WPFToolkit.dll
+C:\github500\M500\DPT_WPF\bin\Release\Extensibility.dll
+C:\github500\M500\DPT_WPF\bin\Release\EnvDTE.dll
+C:\github500\M500\DPT_WPF\bin\Release\EnvDTE80.dll
+C:\github500\M500\DPT_WPF\bin\Release\Microsoft.VisualStudio.CommandBars.dll
+C:\github500\M500\DPT_WPF\bin\Release\stdole.dll
+C:\github500\M500\DPT_WPF\bin\Release\Caliburn.Micro.xml
+C:\github500\M500\DPT_WPF\bin\Release\Caliburn.Micro.Platform.xml
+C:\github500\M500\DPT_WPF\bin\Release\Caliburn.Micro.Platform.Core.xml
+C:\github500\M500\DPT_WPF\bin\Release\LiveCharts.pdb
+C:\github500\M500\DPT_WPF\bin\Release\LiveCharts.xml
+C:\github500\M500\DPT_WPF\bin\Release\LiveCharts.Wpf.pdb
+C:\github500\M500\DPT_WPF\bin\Release\LiveCharts.Wpf.xml
+C:\github500\M500\DPT_WPF\bin\Release\MaterialDesignColors.pdb
+C:\github500\M500\DPT_WPF\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\github500\M500\DPT_WPF\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF.csprojAssemblyReference.cache
+C:\github500\M500\DPT_WPF\obj\Release\resourceDirectory\resourScrollbar.baml
+C:\github500\M500\DPT_WPF\obj\Release\resourceDirectory\resourTabSub.baml
+C:\github500\M500\DPT_WPF\obj\Release\Themes\MetroDark\MetroDark.MSControls.Core.Implicit.baml
+C:\github500\M500\DPT_WPF\obj\Release\Themes\MetroDark\MetroDark.MSControls.Toolkit.Implicit.baml
+C:\github500\M500\DPT_WPF\obj\Release\Themes\MetroDark\Styles.Shared.baml
+C:\github500\M500\DPT_WPF\obj\Release\Themes\MetroDark\Styles.WPF.baml
+C:\github500\M500\DPT_WPF\obj\Release\Themes\MetroDark\Theme.Colors.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonGAS.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonLED.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonMotor.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonPump.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonM270TemperHumity.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\uc270Door.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\ucM270Laser.baml
+C:\github500\M500\DPT_WPF\obj\Release\HMIM270.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\imgLoading\Block.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\imgLoading\LoadingAnimation.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\Login.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\motorError.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\powderSupplyWindow.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\AutoPumpWindow.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonGAS.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonLED.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonMotor.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonPump.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucCommon\ucCommonM270TemperHumity.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucLogin.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\uc270Door.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\ucM270Device.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\ucM270Gas.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\ucM270Laser.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\ValueSelect.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\App.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF_MarkupCompile.cache
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF_MarkupCompile.lref
+C:\github500\M500\DPT_WPF\obj\Release\App.baml
+C:\github500\M500\DPT_WPF\obj\Release\HMIM270.baml
+C:\github500\M500\DPT_WPF\obj\Release\imgLoading\Block.baml
+C:\github500\M500\DPT_WPF\obj\Release\imgLoading\LoadingAnimation.baml
+C:\github500\M500\DPT_WPF\obj\Release\Login.baml
+C:\github500\M500\DPT_WPF\obj\Release\motorError.baml
+C:\github500\M500\DPT_WPF\obj\Release\powderSupplyWindow.baml
+C:\github500\M500\DPT_WPF\obj\Release\AutoPumpWindow.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucLogin.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\ucM270Device.baml
+C:\github500\M500\DPT_WPF\obj\Release\ucM270\ucM270Gas.baml
+C:\github500\M500\DPT_WPF\obj\Release\ValueSelect.baml
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF.g.resources
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF.Properties.Resources.resources
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF.csproj.GenerateResource.cache
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF.csproj.CopyComplete
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF.exe
+C:\github500\M500\DPT_WPF\obj\Release\DPT_WPF.pdb
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\DPT_WPF.exe.config
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\DPT_WPF.exe
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\DPT_WPF.pdb
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\BoxedAppSDK.Managed.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Caliburn.Micro.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Caliburn.Micro.Platform.Core.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Caliburn.Micro.Platform.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\LiveCharts.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\LiveCharts.Wpf.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\MaterialDesignColors.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\MaterialDesignThemes.Wpf.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Hosting.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Console.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Options.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Primitives.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Opc.Ua.Client.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Opc.Ua.Configuration.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Opc.Ua.Core.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcComRcw.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcLabs.BaseLib.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcLabs.EasyOpcClassic.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcLabs.EasyOpcUA.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcLabs.OpcUANodeset.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Buffers.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Memory.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Numerics.Vectors.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Text.Json.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.ValueTuple.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Windows.Interactivity.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\WPFToolkit.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\App_Web_OpcLabs.EasyOpcClassicRaw.amd64.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\App_Web_OpcLabs.EasyOpcClassicRaw.x86.dll
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Caliburn.Micro.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Caliburn.Micro.Platform.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Caliburn.Micro.Platform.Core.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\LiveCharts.pdb
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\LiveCharts.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\LiveCharts.Wpf.pdb
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\LiveCharts.Wpf.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\MaterialDesignColors.pdb
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\MaterialDesignThemes.Wpf.pdb
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\MaterialDesignThemes.Wpf.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.CommandLine.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.EnvironmentVariables.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Configuration.UserSecrets.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Hosting.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Configuration.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Console.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.Debug.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.EventLog.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Logging.EventSource.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Options.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Options.ConfigurationExtensions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\Microsoft.Extensions.Primitives.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcLabs.BaseLib.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcLabs.EasyOpcClassic.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\OpcLabs.EasyOpcUA.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Buffers.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Memory.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Numerics.Vectors.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Text.Json.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\bin\Release\System.ValueTuple.xml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.csproj.AssemblyReference.cache
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\resourceDirectory\resourScrollbar.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\resourceDirectory\resourTabSub.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\Themes\MetroDark\MetroDark.MSControls.Core.Implicit.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\Themes\MetroDark\MetroDark.MSControls.Toolkit.Implicit.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\Themes\MetroDark\Styles.Shared.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\Themes\MetroDark\Styles.WPF.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\Themes\MetroDark\Theme.Colors.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonGAS.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonLED.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonMotor.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonPump.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonM270TemperHumity.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\uc270Door.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\ucM270Laser.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\HMIM270.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\imgLoading\Block.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\imgLoading\LoadingAnimation.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\Login.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\motorError.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\powderSupplyWindow.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\AutoPumpWindow.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonGAS.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonLED.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonMotor.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonPump.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucCommon\ucCommonM270TemperHumity.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucLogin.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\uc270Door.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\ucM270Device.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\ucM270Gas.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\ucM270Laser.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ValueSelect.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\App.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF_MarkupCompile.cache
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF_MarkupCompile.lref
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\App.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\HMIM270.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\imgLoading\Block.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\imgLoading\LoadingAnimation.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\Login.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\motorError.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\powderSupplyWindow.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\AutoPumpWindow.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucLogin.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\ucM270Device.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ucM270\ucM270Gas.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\ValueSelect.baml
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.g.resources
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.Properties.Resources.resources
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.csproj.GenerateResource.cache
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.csproj.CoreCompileInputs.cache
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.csproj.CopyComplete
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.exe
+C:\Users\daeguntech\Desktop\M500 (3)\DPT_WPF\obj\Release\DPT_WPF.pdb
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\DPT_WPF.csproj.AssemblyReference.cache
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\DPT_WPF.csproj.SuggestedBindingRedirects.cache
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\resourceDirectory\resourScrollbar.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\resourceDirectory\resourTabSub.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\Themes\MetroDark\MetroDark.MSControls.Core.Implicit.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\Themes\MetroDark\MetroDark.MSControls.Toolkit.Implicit.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\Themes\MetroDark\Styles.Shared.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\Themes\MetroDark\Styles.WPF.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\Themes\MetroDark\Theme.Colors.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonGAS.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonLED.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonMotor.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonPump.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonM270TemperHumity.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucM270\uc270Door.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucM270\ucM270Laser.baml
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\HMIM270.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\imgLoading\Block.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\imgLoading\LoadingAnimation.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\Login.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\motorError.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\powderSupplyWindow.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\AutoPumpWindow.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonGAS.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonLED.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonMotor.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonPump.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucCommon\ucCommonM270TemperHumity.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucLogin.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucM270\uc270Door.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucM270\ucM270Device.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucM270\ucM270Gas.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ucM270\ucM270Laser.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\ValueSelect.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\App.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\DPT_WPF_MarkupCompile.cache
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\DPT_WPF_MarkupCompile.lref
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\DPT_WPF.exe
+C:\Users\daeguntech\Desktop\M500_시안\DPT_WPF\obj\Release\DPT_WPF.pdb

@@ -1,0 +1,174 @@
+﻿<UserControl x:Class="DPT_WPF.ucCommon.ucCommonGAS"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="964">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="417*"/>
+            <RowDefinition Height="313*"/>
+        </Grid.RowDefinitions>
+
+        <Canvas Grid.Column="0" Grid.Row="1">
+            <Image Stretch="Uniform" Canvas.Top="27" Canvas.Left="78" Width="180" Height="49" HorizontalAlignment="Center">
+                <Image.Source>
+                    <BitmapImage UriSource="/ImgTab/2_gas/title shape.png"/>
+                </Image.Source>
+            </Image>
+            <Label Content="Gas 주입선택" Canvas.Top="35" Canvas.Left="110" Foreground="#FFFFFF" FontSize="18" FontFamily="/DPT_WPF;component/Font/#NanumBarunGothic"/>
+            
+            <Image Stretch="Uniform" Canvas.Top="90" Canvas.Left="75" Width="206" Height="184" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Image.Source>
+                    <BitmapImage UriSource="/ImgTab/2_gas/base shape.png"></BitmapImage>
+                </Image.Source>
+            </Image>
+            
+            <Image x:Name="btnImgN2" Stretch="Uniform" Canvas.Top="94" Canvas.Left="83" Source="/imgTab/2_gas/off.png" Width="74" Height="158">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding SelN2Command}"/>
+                </Image.InputBindings>
+            </Image>
+            <Label Content="N2" FontSize="24" Width="40" Height="40" Foreground="#d3d5d9" Canvas.Left="100" Canvas.Top="199" FontFamily="/DPT_WPF;component/Font/#NanumBarunGothic">
+                <Label.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding SelN2Command}"/>
+                </Label.InputBindings>
+            </Label>
+
+            <Image x:Name="btnImgAr" Stretch="Uniform" Canvas.Top="94" Canvas.Left="187" Source="/imgTab/2_gas/off.png" Width="74" Height="158">
+                <Image.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding SelArCommand}"/>
+                </Image.InputBindings>
+            </Image>
+            <Label Content="Ar" FontSize="24" Width="40" Height="40" Foreground="#d3d5d9" Canvas.Left="206" Canvas.Top="196" FontFamily="/DPT_WPF;component/Font/#NanumBarunGothic">
+                <Label.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding SelArCommand}"/>
+                </Label.InputBindings>
+            </Label>
+        </Canvas>
+
+        <Canvas Grid.Column="2" Grid.Row="1">
+            <Image Stretch="Uniform" Canvas.Top="27" Canvas.Left="72"  Width="180" Height="49" HorizontalAlignment="Center">
+                <Image.Source>
+                    <BitmapImage UriSource="/ImgTab/2_gas/title shape.png"/>
+                </Image.Source>
+            </Image>
+            <Label Content="Flow" Canvas.Top="35" Canvas.Left="142"  Foreground="#FFFFFF" FontSize="18" HorizontalAlignment="Center" FontFamily="/DPT_WPF;component/Font/#NanumBarunGothic"></Label>
+            
+            <Label Content="Air" Canvas.Left="40" Canvas.Top="168" Foreground="#D3D5D9"/>
+            <Label x:Name="AirFlow"
+                   Content="0" 
+                   Foreground="#F3FBFF" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center"
+                   Width="125" Height="32" 
+                   Canvas.Left="103" 
+                   Canvas.Top="167" 
+                   Grid.Column="2" 
+                   Grid.Row="1">
+                <Label.Background>
+                    <ImageBrush ImageSource="/DPT_WPF;component/imgTab/2_gas/textbox.png"/>
+                </Label.Background>
+            </Label>
+
+            <Label Content="Gas" Canvas.Left="40" Canvas.Top="230" Foreground="#D3D5D9"/>
+            <Label x:Name="GasFlow"
+                   Content="0" 
+                   Foreground="#F3FBFF" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center"
+                   Width="125" Height="32" 
+                   Canvas.Left="103" 
+                   Canvas.Top="231"
+                   Grid.Column="2" 
+                   Grid.Row="1">
+                <Label.Background>
+                    <ImageBrush ImageSource="/DPT_WPF;component/imgTab/2_gas/textbox.png"/>
+                </Label.Background>
+            </Label>
+            
+        </Canvas>
+
+
+        <Image x:Name="imgGasSupply" Grid.Column="2" Source="/ImgTab/2_gas/gas botten.png" Grid.Row="2" Stretch="Uniform" VerticalAlignment="Top" HorizontalAlignment="Center" Height="80" Margin="0,90,0,0" Width="227">
+            <Image.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding GasSupplyCommand}"></MouseBinding>
+            </Image.InputBindings>
+
+        </Image>
+
+        <Canvas Grid.Column="4" Grid.Row="1">
+            <Image Stretch="Uniform" Canvas.Left="60" Canvas.Top="27" Width="180" Height="49" HorizontalAlignment="Center">
+                <Image.Source>
+                    <BitmapImage UriSource="/ImgTab/2_gas/title shape.png"/>
+                </Image.Source>
+
+            </Image>
+            <Label Content="Range" Canvas.Top="35" Canvas.Left="122"  Foreground="#FFFFFF" FontSize="18" HorizontalAlignment="Center" FontFamily="/DPT_WPF;component/Font/#NanumBarunGothic"></Label>
+
+            <Label Content="최대" Canvas.Left="59" Canvas.Top="168" Foreground="#D3D5D9"/>
+            <Label x:Name="MaxOxyValue"
+                   Content="0" 
+                   Foreground="#F3FBFF" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center"
+                   Width="110" Height="32" 
+                   Canvas.Left="130" 
+                   Canvas.Top="167"
+                   Grid.Column="2" 
+                   Grid.Row="1">
+                <Label.Background>
+                    <ImageBrush ImageSource="/DPT_WPF;component/imgTab/2_gas/textbox.png"/>
+                </Label.Background>
+                <Label.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding MaxOxyCommand}"/>
+                </Label.InputBindings>
+            </Label>
+
+            <Label Content="최소" Canvas.Left="60" Canvas.Top="237" Foreground="#D3D5D9"/>
+            <Label x:Name="MinOxyValue"
+                   Content="0" 
+                   Foreground="#F3FBFF" 
+                   FontSize="20" 
+                   HorizontalContentAlignment="Center"
+                   Width="110" Height="32" 
+                   Canvas.Left="130" 
+                   Canvas.Top="230"
+                   Grid.Column="2" 
+                   Grid.Row="1">
+                <Label.Background>
+                    <ImageBrush ImageSource="/DPT_WPF;component/imgTab/2_gas/textbox.png"/>
+                </Label.Background>
+                <Label.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding MinOxyCommand}"/>
+                </Label.InputBindings>
+            </Label>
+
+            <Image Stretch="Uniform" Canvas.Left="-560" Canvas.Top="277" Width="180" Height="49" HorizontalAlignment="Center">
+                <Image.Source>
+                    <BitmapImage UriSource="/ImgTab/2_gas/title shape.png"/>
+                </Image.Source>
+
+            </Image>
+            <Label x:Name="AirValveStatus" Content="공압 ON" Canvas.Top="286" Canvas.Left="-514"  Foreground="#FFFFFF" FontSize="18" HorizontalAlignment="Center" FontFamily="/DPT_WPF;component/Font/#NanumBarunGothic" Width="101"/>
+            <Rectangle Height="51" Canvas.Left="-564" Canvas.Top="271" Width="182">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </Rectangle.Fill>
+                <Rectangle.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding AirPressureCommand}"/>
+                </Rectangle.InputBindings>
+            </Rectangle>
+
+        </Canvas>
+    </Grid>
+</UserControl>

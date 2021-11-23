@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="DPT_WPF.ucLogin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DPT_WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="95" d:DesignWidth="1080">
+    
+    <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,3.667" Grid.RowSpan="2">
+        <Grid>
+            <Image Grid.Column="2" Grid.RowSpan="2" Source="/imgTop/top_basebox.png" Stretch="None"></Image>
+            <Image  Source="/imgTop/login.png" Height="44" Width="44" Margin="40,27,988,24"/>
+            <Grid Margin="80,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="{Binding FtpName}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FF45BDFF" RenderTransformOrigin="0,0.5" FontSize="10" Width="99" Margin="14,0,39,0" Grid.ColumnSpan="2"/>
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="{Binding UserName}" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0,0.5" Margin="12,0,0,0" FontSize="18" Grid.ColumnSpan="2" Width="138"/>
+                <Image Grid.Column="2" Grid.RowSpan="2" Stretch="None" RenderTransformOrigin="0.5,0.5" Margin="0,10,0,-10">
+                    <Image.Style>
+                        <Style>
+                            <Setter Property="Image.Source" Value="/imgTop/top_btn_info.png" />
+                        </Style>
+                    </Image.Style>
+                    <Image.InputBindings>
+                        <MouseBinding Gesture="LeftClick" Command="{Binding PowderSupplyWindowCommand}"/>
+                    </Image.InputBindings>
+                </Image>
+                <Image x:Name="imgSetting" Grid.Column="4" Grid.RowSpan="2" Source="/imgTop/top_btn_logout.png" Stretch="None" Margin="0,10,0,-10">
+                    <Image.InputBindings>
+                        <MouseBinding Gesture="LeftClick" Command="{Binding Setting3Command}"/>
+                    </Image.InputBindings>
+                </Image>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</UserControl>

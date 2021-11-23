@@ -1,0 +1,397 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="MyItemContainerStyle" TargetType="{x:Type ListViewItem}">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+    <Style x:Key="MyContainer" TargetType="{x:Type ListViewItem}">
+        <Setter Property="Margin" Value="0,1,0,0"/>
+        <Setter Property="Height" Value="21"/>
+
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsSelected" Value="true" />
+                    <Condition Property="Selector.IsSelectionActive" Value="true" />
+                </MultiTrigger.Conditions>
+                <Setter Property="Foreground" Value="Yellow" />
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="listitemFolder" TargetType="{x:Type ListViewItem}">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Margin" Value="-1,-1,-1,-1"></Setter>
+        <Style.Triggers>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                <Setter Property="Background" Value="#FFF2F6FA"/>
+            </Trigger>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                <Setter Property="Background" Value="#FFEBF1F5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <Style x:Key="SliderRepeatButton" TargetType="RepeatButton">
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="Margin" Value="-8.5,0,8,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border Background="#FFD7E0E9">
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SliderRepeatButton1" TargetType="RepeatButton">
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="Margin" Value="8,0,-10,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border SnapsToDevicePixels="True">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0">
+                                    <GradientStop Color="#FF3DB6FF" Offset="0"/>
+                                    <GradientStop Color="#FF257FD7" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SliderRepeatButton2" TargetType="RepeatButton">
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Margin" Value="8,0,-10,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border SnapsToDevicePixels="True" Width="580">
+                            <Border.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="Red" Offset="1"/>
+                                    <GradientStop Color="#FF60C2F1" Offset="0"/>
+                                    <GradientStop Color="#FFFFC500" Offset="0.741"/>
+                                    <GradientStop Color="#FFF6FF3E" Offset="0.571"/>
+                                    <GradientStop Color="#FFFFC500" Offset="0.734"/>
+                                    <GradientStop Color="#FEFE0A00" Offset="1"/>
+                                    <GradientStop Color="#FF56B099" Offset="0.138"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="printSliderRepeatButton" TargetType="RepeatButton">
+            <Setter Property="Height" Value="6"></Setter>
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="Margin" Value="-13,0,0,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                    <Border Background="Transparent" CornerRadius="0,3,3,0" BorderThickness="0" BorderBrush="Transparent">
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="printSliderRepeatButton1" TargetType="RepeatButton">
+            <Setter Property="Height" Value="6"></Setter>
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="Margin" Value="0,0,-25,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                    <Border SnapsToDevicePixels="True" CornerRadius="3,0,0,3" Background="#FFECD0" BorderThickness="0" BorderBrush="Transparent" >
+
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <Style x:Key="SliderThumb" TargetType="Thumb">
+            <Setter Property="Focusable" Value="false" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate  TargetType="Thumb">
+                    <Image Margin="0,0,0,-10" Height="33" Width="17" x:Name="image1" Source="/imgTabSubCommon/imgCommonPump/btn.png" Stretch="None" RenderTransformOrigin="0.5,0.5">
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform Y="20"/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="printSliderThumb" TargetType="Thumb">
+            <Setter Property="Focusable" Value="false" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate  TargetType="Thumb">
+                    <Canvas>
+                        <Ellipse Width="30" Height="30" Fill="#FFFFFF" Canvas.Top="6"/>
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SliderTick" TargetType="TickBar">
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="TickFrequency" Value="1"></Setter>
+        </Style>
+
+        <ControlTemplate x:Key="Slider"  TargetType="Slider">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0" />
+                    <RowDefinition Height="40" MinHeight="{TemplateBinding MinHeight}" />
+                    <RowDefinition Height="10" />
+                </Grid.RowDefinitions>
+                <Track Grid.Row="1" x:Name="PART_Track"   >
+                    <Track.DecreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource SliderRepeatButton1}"  Command="Slider.DecreaseLarge" />
+                    </Track.DecreaseRepeatButton>
+                    <Track.IncreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource SliderRepeatButton}" Command="Slider.IncreaseLarge" />
+                    </Track.IncreaseRepeatButton>
+                    <Track.Thumb>
+                        <Thumb Margin="0,0,0,0" Style="{StaticResource SliderThumb}"  />
+                    </Track.Thumb>
+                </Track>
+            </Grid>
+        </ControlTemplate>
+
+
+
+
+        <ControlTemplate x:Key="Slider_Temper"  TargetType="Slider">
+            <Grid OverridesDefaultStyle="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0" />
+                    <RowDefinition Height="40" MinHeight="{TemplateBinding MinHeight}" />
+                    <RowDefinition Height="10" />
+                </Grid.RowDefinitions>
+                <Track Grid.Row="1" x:Name="PART_Track"   >
+                    <Track.DecreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource SliderRepeatButton2}"  Command="Slider.DecreaseLarge" />
+                    </Track.DecreaseRepeatButton>
+                    <Track.IncreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource SliderRepeatButton}" Command="Slider.IncreaseLarge" />
+                    </Track.IncreaseRepeatButton>
+                    <!--<Track.Thumb>
+                        <Thumb Margin="0,0,0,0" Style="{StaticResource SliderThumb}"  />
+                    </Track.Thumb>-->
+                </Track>
+            </Grid>
+        </ControlTemplate>
+
+
+
+        <ControlTemplate x:Key="printSlider"  TargetType="Slider">
+            <Grid>
+                <Track Grid.Row="1" x:Name="PART_Track"   >
+                    <Track.DecreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource printSliderRepeatButton1}"  Command="Slider.DecreaseLarge" />
+                    </Track.DecreaseRepeatButton>
+                    <Track.IncreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource printSliderRepeatButton}" Command="Slider.IncreaseLarge" />
+                    </Track.IncreaseRepeatButton>
+                    <Track.Thumb>
+                        <Thumb Margin="0,0,0,0" Style="{StaticResource printSliderThumb}"  />
+                    </Track.Thumb>
+                </Track>
+            </Grid>
+        </ControlTemplate>
+
+        <Style x:Key="Horizontal_Slider" TargetType="Slider">
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="TickFrequency" Value="1"></Setter>
+            <Setter Property="TickPlacement" Value="BottomRight"></Setter>
+            <Style.Triggers>
+                <Trigger Property="Orientation" Value="Horizontal">
+                    <Setter Property="Template" Value="{StaticResource Slider}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="Horizontal_Slider_Temper" TargetType="Slider">
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="TickFrequency" Value="1"></Setter>
+            <Setter Property="TickPlacement" Value="BottomRight"></Setter>
+            <Style.Triggers>
+                <Trigger Property="Orientation" Value="Horizontal">
+                    <Setter Property="Template" Value="{StaticResource Slider_Temper}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    <Style x:Key="print_Slider" TargetType="Slider" >
+        <Setter Property="Focusable" Value="False"/>
+            <Setter Property="TickFrequency" Value="1"></Setter>
+            <Setter Property="TickPlacement" Value="BottomRight"></Setter>
+            <Style.Triggers>
+                <Trigger Property="Orientation" Value="Horizontal">
+                    <Setter Property="Template" Value="{StaticResource printSlider}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    <Style x:Key="camera_Slider" TargetType="Slider" >
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Background" Value="AliceBlue"></Setter>
+        <Setter Property="TickFrequency" Value="1"></Setter>
+        <Setter Property="TickPlacement" Value="BottomRight"></Setter>
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Horizontal">
+                <Setter Property="Template" Value="{StaticResource printSlider}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="LineButton" TargetType="{x:Type RepeatButton}">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="Visibility" Value="Hidden"></Setter>
+            <Setter Property="Background" Value="#FFD7E0E9"></Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate x:Name="tmplRepeatButton">
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+        <Style x:Key="PageButton" TargetType="{x:Type RepeatButton}">
+            <Setter Property="OverridesDefaultStyle" Value="False" />
+            <Setter Property="SnapsToDevicePixels" Value="False" />
+            <Setter Property="Margin" Value="12,0,-12,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate x:Name="tmplRepeatButton">
+                        <Border BorderBrush="Black" BorderThickness="0" CornerRadius="0">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0,1" StartPoint="0,1" SpreadMethod="Pad">
+                                    <GradientStop Color="#FF3EB7FF"/>
+                                    <GradientStop Color="#FF237DD3" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="PageButton1" TargetType="{x:Type RepeatButton}">
+            <Setter Property="OverridesDefaultStyle" Value="False" />
+            <Setter Property="SnapsToDevicePixels" Value="False" />
+            <Setter Property="Background" Value="#FFD7E0E9"></Setter>
+            <Setter Property="Margin" Value="4,0,0,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate x:Name="tmplRepeatButton">
+                        <Border BorderBrush="Black" BorderThickness="0" CornerRadius="0">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="1,0" StartPoint="0,0">
+                                    <GradientStop Color="#FFD7E0E9"/>
+                                    <GradientStop Color="#FFD7E0E9" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ScrollThumb" TargetType="{x:Type Thumb}">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="SnapsToDevicePixels" Value="False" />
+            <Setter Property="Margin" Value="0,0,0,-20"></Setter>
+            <Setter Property="Width" Value="0"></Setter>
+            <Setter Property="Height" Value="0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate x:Name="tmplScrollThumb">
+                        <Canvas>
+                            <Image Stretch="None">
+                                <Image.Source>
+                                    <BitmapImage UriSource="/imgTabSubCommon/imgCommonPump/btn.png"></BitmapImage>
+                                </Image.Source>
+                            </Image>
+                        </Canvas>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <ControlTemplate x:Key="VerticalScroll" TargetType="{x:Type ScrollBar}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="18"></RowDefinition>
+                    <RowDefinition Height="0.00001*"></RowDefinition>
+                    <RowDefinition Height="18"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Border Grid.RowSpan="3" CornerRadius="3" BorderBrush="DarkBlue" BorderThickness="1" Opacity=".6"></Border>
+                <RepeatButton Grid.Row="0" Style="{StaticResource LineButton}" Height="18" Command="ScrollBar.LineUpCommand" Content="M 0 4 L 8 4 L 4 0 Z">
+                </RepeatButton>
+                <Track Name="PART_Track" Grid.Row="1" IsDirectionReversed="True">
+                    <Track.DecreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource PageButton}" Command="ScrollBar.PageUpCommand" />
+                    </Track.DecreaseRepeatButton>
+                    <Track.Thumb>
+                        <Thumb Style="{StaticResource ScrollThumb}" />
+                    </Track.Thumb>
+                    <Track.IncreaseRepeatButton>
+                        <RepeatButton Style="{StaticResource PageButton}" Command="ScrollBar.PageDownCommand" />
+                    </Track.IncreaseRepeatButton>
+                </Track>
+                <RepeatButton Grid.Row="2" Style="{StaticResource LineButton}" Height="18" Command="ScrollBar.LineDownCommand" Content="M 0 0 L 4 4 L 8 0 Z">
+                </RepeatButton>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="HorizontalScroll" TargetType="{x:Type ScrollBar}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+
+
+
+            <Track Name="PART_Track" Grid.Column="1" IsDirectionReversed="False">
+                <Track.DecreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource PageButton}" Command="ScrollBar.PageLeftCommand" />
+                </Track.DecreaseRepeatButton>
+                <Track.IncreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource PageButton1}" Command="ScrollBar.PageDownCommand" />
+                </Track.IncreaseRepeatButton>
+                <Track.Thumb>
+                    <Thumb Style="{StaticResource ScrollThumb}" />
+                </Track.Thumb>
+            </Track>
+        </Grid>
+        </ControlTemplate>
+</ResourceDictionary>

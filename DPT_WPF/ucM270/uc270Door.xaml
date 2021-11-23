@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="DPT_WPF.ucM270.uc270Door"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        mc:Ignorable="d" 
+        d:DesignWidth="400" d:DesignHeight="201">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="186"/>
+            <ColumnDefinition Width="28"/>
+            <ColumnDefinition Width="186"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Image Source="/imgTab/1_home/chamber door/doorimage.png"/>
+            <Border>
+                <Image x:Name="imgFrontDoor" 
+                   Stretch="Uniform"
+                   Source="/imgTab/1_home/chamber door/unlock_on.png" 
+                   Width="109" 
+                   Height="52" 
+                   Margin="0,0,50,100">
+                    <Image.InputBindings>
+                        <MouseBinding Gesture="LeftClick" Command="{Binding FrontDoorCommand}"/>
+                    </Image.InputBindings>
+                </Image>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Column="2">
+            <Image Source="/imgTab/1_home/chamber door/doorimage.png"/>
+            <Border>
+                <Image x:Name="imgRearDoor" 
+                   Stretch="Uniform"
+                   Source="/imgTab/1_home/chamber door/unlock_on.png" 
+                   Width="109" 
+                   Height="52" 
+                   Margin="0,0,50,100">
+                    <Image.InputBindings>
+                        <MouseBinding Gesture="LeftClick" Command="{Binding RearDoorCommand}"/>
+                    </Image.InputBindings>
+                </Image>
+            </Border>
+        </Grid>
+
+    </Grid>
+    
+</UserControl>

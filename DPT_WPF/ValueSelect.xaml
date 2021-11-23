@@ -1,0 +1,176 @@
+﻿<Window x:Class="DPT_WPF.ValueSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DPT_WPF"
+        mc:Ignorable="d"
+        Title="ValueSelect" WindowStyle="None" Height="350" Width="200" Background="#FF292C32" Left="300" Top="700" ResizeMode="NoResize">
+
+    <Grid HorizontalAlignment="Left">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="48"/>
+            <ColumnDefinition Width="48"/>
+            <ColumnDefinition Width="48"/>
+            <ColumnDefinition Width="48"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="resultValue"
+               Content="0"
+               FontSize="40"
+               Grid.ColumnSpan="4"
+               Grid.Row="0"
+               HorizontalAlignment="Right"
+               VerticalContentAlignment="Bottom">
+        </Label>
+
+        <!--숫자패드 0-->
+        <Button x:Name="ZeroBtn"
+                Content="0"
+                FontSize="30"
+                Grid.Column="0"
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5" 
+                Click="NumBtn_Click"
+                />
+
+        <Button x:Name="oneBtn"
+                Content="1"
+                FontSize="30"
+                Grid.Column="0"
+                Grid.Row="3"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5" 
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="twoBtn"
+                Content="2"
+                FontSize="30"
+                Grid.Column="1"
+                Grid.Row="3"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="threeBtn"
+                Content="3"
+                FontSize="30"
+                Grid.Column="2"
+                Grid.Row="3"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="fourBtn"
+                Content="4"
+                FontSize="30"
+                Grid.Column="0"
+                Grid.Row="2"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="fiveBtn"
+                Content="5"
+                FontSize="30"
+                Grid.Column="1"
+                Grid.Row="2"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="sixBtn"
+                Content="6"
+                FontSize="30"
+                Grid.Column="2"
+                Grid.Row="2"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="sevenBtn"
+                Content="7"
+                FontSize="30"
+                Grid.Column="0"
+                Grid.Row="1"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="eightBtn"
+                Content="8"
+                FontSize="30"
+                Grid.Column="1"
+                Grid.Row="1"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="nineBtn"
+                Content="9"
+                FontSize="30"
+                Grid.Column="2"
+                Grid.Row="1"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5"
+                Click="NumBtn_Click"
+                />
+        <Button x:Name="dotBtn"
+                Content="."
+                FontSize="30"
+                Grid.Column="2"
+                Grid.Row="5"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5" Click="dotBtn_Click"
+                />
+        <Button x:Name="escBtn"
+                Content="ESC"
+                FontSize="10"
+                Grid.Column="3"
+                Grid.Row="1"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5" Click="escBtn_Click"
+                />
+        <Button x:Name="delBtn"
+                Content="DEL"
+                FontSize="10"
+                Grid.Column="3"
+                Grid.Row="2"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5" Click="delBtn_Click"
+                />
+        <Button x:Name="saveBtn"
+                Content="저&#xD;&#xA;장"
+                FontSize="10"
+                Grid.Column="3"
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Foreground="White"
+                Background="Gray"
+                Margin="5,5,5,5" Click="saveBtn_Click">
+        </Button>
+    </Grid>
+</Window>

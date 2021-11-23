@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07754FA1-B922-41FC-9A22-DD8FB3E31F91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DPT_WPF</RootNamespace>
+    <AssemblyName>DPT_WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BoxedAppSDK.Managed, Version=2020.5.0.0, Culture=neutral, PublicKeyToken=84fe779840c3b626, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\BoxedAppSDK.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro, Version=3.2.0.0, Culture=neutral, PublicKeyToken=8e5891231f2ed21f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Caliburn.Micro.Core.3.2.0\lib\net45\Caliburn.Micro.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro.Platform, Version=3.2.0.0, Culture=neutral, PublicKeyToken=8e5891231f2ed21f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Caliburn.Micro.3.2.0\lib\net45\Caliburn.Micro.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Caliburn.Micro.Platform.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=8e5891231f2ed21f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Caliburn.Micro.3.2.0\lib\net45\Caliburn.Micro.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.2.5.1465, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.5\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=3.1.2.1465, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.3.1.2\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.5.0.0\lib\net461\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.5.0.0\lib\net461\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.5.0.0\lib\net461\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.CommandLine, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.CommandLine.5.0.0\lib\net461\Microsoft.Extensions.Configuration.CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.EnvironmentVariables.5.0.0\lib\net461\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.FileExtensions.5.0.0\lib\net461\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Json.5.0.0\lib\net461\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.UserSecrets, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\lib\net461\Microsoft.Extensions.Configuration.UserSecrets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.5.0.0\lib\net461\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.5.0.0\lib\net461\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.5.0.0\lib\net461\Microsoft.Extensions.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.5.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Configuration, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Configuration.5.0.0\lib\net461\Microsoft.Extensions.Logging.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Console, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Console.5.0.0\lib\net461\Microsoft.Extensions.Logging.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Debug, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Debug.5.0.0\lib\net461\Microsoft.Extensions.Logging.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.EventLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.EventLog.5.0.0\lib\net461\Microsoft.Extensions.Logging.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.EventSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.EventSource.5.0.0\lib\net461\Microsoft.Extensions.Logging.EventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.5.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options.ConfigurationExtensions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.ConfigurationExtensions.5.0.0\lib\net461\Microsoft.Extensions.Options.ConfigurationExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.5.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Client, Version=1.3.342.0, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\Opc.Ua.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Configuration, Version=1.3.342.0, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\Opc.Ua.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Core, Version=1.3.342.0, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\Opc.Ua.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcComRcw, Version=2.0.105.1, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\OpcComRcw.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcLabs.BaseLib, Version=5.61.241.1, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\OpcLabs.BaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcLabs.EasyOpcClassic, Version=5.61.241.1, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\OpcLabs.EasyOpcClassic.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcLabs.EasyOpcUA, Version=5.61.241.1, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\OpcLabs.EasyOpcUA.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcLabs.OpcUANodeset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6faddca41dacb409, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpcLabs.QuickOpc.5.61.241\lib\net47\OpcLabs.OpcUANodeset.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.Themes.MetroDark.Wpf.1.0.0\lib\net40\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.Themes.MetroDark.Wpf.1.0.0\lib\net40\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Caliburn.Micro.3.2.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.Linq.3.5.21022.801\lib\net20\System.Xml.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.Themes.MetroDark.Wpf.1.0.0\lib\net40\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="cd_FileLoading.cs" />
+    <Compile Include="cd_printing.cs" />
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="HMIM270.xaml.cs">
+      <DependentUpon>HMIM270.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HMI_eventHandler270.cs" />
+    <Compile Include="imgLoading\Block.xaml.cs">
+      <DependentUpon>Block.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="imgLoading\LoadingAnimation.xaml.cs">
+      <DependentUpon>LoadingAnimation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="motorError.xaml.cs">
+      <DependentUpon>motorError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="powderSupplyWindow.xaml.cs">
+      <DependentUpon>powderSupplyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPumpWindow.xaml.cs">
+      <DependentUpon>AutoPumpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCommon\ucCommonGAS.xaml.cs">
+      <DependentUpon>ucCommonGAS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCommon\ucCommonLED.xaml.cs">
+      <DependentUpon>ucCommonLED.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCommon\ucCommonMotor.xaml.cs">
+      <DependentUpon>ucCommonMotor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCommon\ucCommonPump.xaml.cs">
+      <DependentUpon>ucCommonPump.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCommon\ucCommonM270TemperHumity.xaml.cs">
+      <DependentUpon>ucCommonM270TemperHumity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucLogin.xaml.cs">
+      <DependentUpon>ucLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucM270\uc270Door.xaml.cs">
+      <DependentUpon>uc270Door.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucM270\ucM270Device.xaml.cs">
+      <DependentUpon>ucM270Device.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucM270\ucM270Gas.xaml.cs">
+      <DependentUpon>ucM270Gas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucM270\ucM270Laser.xaml.cs">
+      <DependentUpon>ucM270Laser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ValueSelect.xaml.cs">
+      <DependentUpon>ValueSelect.xaml</DependentUpon>
+    </Compile>
+    <Page Include="HMIM270.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="imgLoading\Block.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="imgLoading\LoadingAnimation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cd_Profile.cs" />
+    <Compile Include="DefineValue.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Page Include="motorError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="powderSupplyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="resourceDirectory\resourScrollbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="resourceDirectory\resourTabSub.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AutoPumpWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MetroDark\MetroDark.MSControls.Core.Implicit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MetroDark\MetroDark.MSControls.Toolkit.Implicit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MetroDark\Styles.Shared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MetroDark\Styles.WPF.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\MetroDark\Theme.Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCommon\ucCommonGAS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCommon\ucCommonLED.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCommon\ucCommonMotor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCommon\ucCommonPump.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCommon\ucCommonM270TemperHumity.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucM270\uc270Door.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucM270\ucM270Device.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucM270\ucM270Gas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucM270\ucM270Laser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ValueSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Font\NanumBarunGothic.ttf" />
+    <Resource Include="Font\NanumBarunGothicBold.ttf" />
+    <Resource Include="Font\NanumGothic.ttf" />
+    <Resource Include="Font\NanumGothicBold.ttf" />
+    <Resource Include="Font\NanumGothicExtraBold.ttf" />
+    <Resource Include="Font\NanumSquareB.ttf" />
+    <Resource Include="Font\NanumSquareEB.ttf" />
+    <Resource Include="Font\NanumSquareR.ttf" />
+    <None Include="imgLogoutPopup\logout_btn_com.psd" />
+    <None Include="imgLogoutPopup\logout_btn_com_click.psd" />
+    <None Include="imgLogoutPopup\logout_btn_no.psd" />
+    <None Include="imgLogoutPopup\logout_btn_no_click.psd" />
+    <None Include="imgLogoutPopup\logout_btn_yes.psd" />
+    <None Include="imgLogoutPopup\logout_btn_yes_click.psd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="textResource\NanumGothic.ttf" />
+    <Resource Include="textResource\NanumGothicBold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTabSubCommon\imgCommonDoor\btn_close.png" />
+    <Resource Include="imgTabSubCommon\imgCommonDoor\btn_doorOn.png" />
+    <Resource Include="imgTabSubCommon\imgCommonDoor\door2_closed.png" />
+    <Resource Include="imgTabSubCommon\imgCommonDoor\door2_open.png" />
+    <Resource Include="imgTabSubCommon\imgCommonDoor\text_box_door.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\bg_btn_gas.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btngassupply2.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_ar_off.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_ar_on.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_gas.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_gas_on.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_gas_supply_.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_gas_supply_1.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_gas_supply_2.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_gas_supply_click_1.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_n2_off.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\btn_n2_on.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\text_box_gas_01.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\text_box_gas_02.png" />
+    <Resource Include="imgTabSubCommon\imgCommonGas\tooltip_gas_1.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLaser\btn_laser_none_T.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLaser\btn_laser_on_T.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLaser\text_box_laser.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLaser\tooltip_laser_1.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLED\led_01.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLED\led_02.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLED\led_03.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLED\led_off.png" />
+    <Resource Include="imgTabSubCommon\imgCommonLED\led_on.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\alarm_off.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\alarm_on.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_down.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_down_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_left.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_left_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_off.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_right.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_right_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_up.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\arrow_up_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_close.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_down.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_down_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_home.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_home_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_reset.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_reset_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_reset_none.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_up.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\btn_up_click.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\imgRecotrogoback2.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\text_box_motor.png" />
+    <Resource Include="imgTabSubCommon\imgCommonMotor\text_box_motor2.png" />
+    <Resource Include="imgTabSubCommon\imgCommonPump\btn.png" />
+    <Resource Include="imgTabSubCommon\imgCommonPump\handle.png" />
+    <Resource Include="imgTabSubCommon\imgCommonPump\pump_out.png" />
+    <Resource Include="imgTabSubCommon\imgCommonPump\pump_round.png" />
+    <Resource Include="imgTabSubCommon\imgCommonPump\pump_rulur.png" />
+    <Resource Include="imgTabSubCommon\imgCommonPump\text_box_s.png" />
+    <Resource Include="imgTabSubCommon\imgCommonTemerHumity\humidity_round.png" />
+    <Resource Include="imgTabSubCommon\imgCommonTemerHumity\pump_out.png" />
+    <Resource Include="imgTabSubCommon\imgCommonTemerHumity\temper_temp.PNG" />
+    <Resource Include="imgTabSubCommon\imgCommonTemerHumity\temp_round.png" />
+    <Resource Include="imgTabSubCommon\imgCommonTemerHumity\text_box_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgLogin\btn_login.png" />
+    <Resource Include="imgLogin\btn_login_click.png" />
+    <Resource Include="imgLogin\DAEGUN PEEK140.png" />
+    <Resource Include="imgLogin\DPERT PEEK140.png" />
+    <Resource Include="imgLogin\icon_id.png" />
+    <Resource Include="imgLogin\icon_ip.png" />
+    <Resource Include="imgLogin\icon_pw.png" />
+    <Resource Include="imgLogin\login_bg.png" />
+    <Resource Include="imgLogin\login_dpert_logo.png" />
+    <Resource Include="imgLogin\text_box.png" />
+    <Resource Include="imgLogin\text_box_ip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="allbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTop\login.png" />
+    <Resource Include="imgTop\logo.png" />
+    <Resource Include="imgTop\top.png" />
+    <Resource Include="imgTop\top_basebox.png" />
+    <Resource Include="imgTop\top_btn_info.png" />
+    <Resource Include="imgTop\top_btn_info_click.png" />
+    <Resource Include="imgTop\top_btn_logout.png" />
+    <Resource Include="imgTop\top_btn_logout_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgDevice\Device_Inner.png" />
+    <Resource Include="imgDevice\Device_Inner_base.png" />
+    <Resource Include="imgDevice\Gas_Temp_Sensor.png" />
+    <Resource Include="imgDevice\l.png" />
+    <Resource Include="imgDevice\recoter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTop\title_deagun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgPrinting\printing_State_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgPrinting\base shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMenu\gas.png" />
+    <Resource Include="imgMenu\gas_click.png" />
+    <Resource Include="imgMenu\gas_on.png" />
+    <Resource Include="imgMenu\home.png" />
+    <Resource Include="imgMenu\home_click.png" />
+    <Resource Include="imgMenu\home_on.png" />
+    <Resource Include="imgMenu\log click.png" />
+    <Resource Include="imgMenu\log.png" />
+    <Resource Include="imgMenu\log_on.png" />
+    <Resource Include="imgMenu\moter_click.png" />
+    <Resource Include="imgMenu\motor.png" />
+    <Resource Include="imgMenu\motor_on.png" />
+    <Resource Include="imgMenu\printing.png" />
+    <Resource Include="imgMenu\printing_on.png" />
+    <Resource Include="imgMenu\print_click.png" />
+    <Resource Include="imgMenu\pump.png" />
+    <Resource Include="imgMenu\pump_click.png" />
+    <Resource Include="imgMenu\pump_on.png" />
+    <Resource Include="imgMenu\tembtn_on.png" />
+    <Resource Include="imgMenu\temperature.png" />
+    <Resource Include="imgMenu\tem_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTop\Beige.png" />
+    <Resource Include="imgTop\Black.png" />
+    <Resource Include="imgTop\green light.png" />
+    <Resource Include="imgTop\light.png" />
+    <Resource Include="imgTop\oxygen.png" />
+    <Resource Include="imgTop\powder supply.png" />
+    <Resource Include="imgTop\powder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTop\grid.png" />
+    <Resource Include="imgTop\round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="led_baseshape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMonitoring\imgAlarmBlue.png" />
+    <Resource Include="imgMonitoring\imgAlarmRed.png" />
+    <Resource Include="imgMonitoring\imgAlarmYellow.png" />
+    <Resource Include="imgMonitoring\imgBlueTitleSqure.png" />
+    <Resource Include="imgMonitoring\imgChangeGray.png" />
+    <Resource Include="imgMonitoring\imgChangeRed.png" />
+    <Resource Include="imgMonitoring\imgChangeYellow.png" />
+    <Resource Include="imgMonitoring\imgLeftArrow.png" />
+    <Resource Include="imgMonitoring\imgLeftArrowDisable.png" />
+    <Resource Include="imgMonitoring\imgLineSeriseBackground.png" />
+    <Resource Include="imgMonitoring\imgLogBackground.png" />
+    <Resource Include="imgMonitoring\imgPartStausBackground.png" />
+    <Resource Include="imgMonitoring\imgPrintingetc.png" />
+    <Resource Include="imgMonitoring\imgPrintingFail.png" />
+    <Resource Include="imgMonitoring\imgPrintingSusses.png" />
+    <Resource Include="imgMonitoring\imgRightArrow.png" />
+    <Resource Include="imgMonitoring\imgRightArrowDisable.png" />
+    <Resource Include="imgMonitoring\imgUpdate.png" />
+    <Resource Include="imgMonitoring\img_log.png" />
+    <Resource Include="imgMonitoring\img_logtime2.png" />
+    <Resource Include="imgMonitoring\img_logtool.png" />
+    <Resource Include="imgMonitoring\img_timelog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\MetroDark\HowToApplyTheme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMonitoring\imgLineSeriseBackground2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMonitoring\imgLineSeriseBackground3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTop\Beige_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="motor_popup_btn_goback2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgLogoutPopup\logout_bg.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_cancel.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_cancel_click.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_com.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_com_click.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_logout.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_logout_click.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_no.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_no_click.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_yes.png" />
+    <Resource Include="imgLogoutPopup\logout_btn_yes_click.png" />
+    <Resource Include="imgLogoutPopup\logout_icon.png" />
+    <Resource Include="imgLogoutPopup\투명사각형.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTab\1_home\box.png" />
+    <Resource Include="imgTab\1_home\chamber door\doorimage.png" />
+    <Resource Include="imgTab\1_home\chamber door\lock.png" />
+    <Resource Include="imgTab\1_home\chamber door\lock_on.png" />
+    <Resource Include="imgTab\1_home\chamber door\lock_on_btn.png" />
+    <Resource Include="imgTab\1_home\chamber door\unlock.png" />
+    <Resource Include="imgTab\1_home\chamber door\unlock_on.png" />
+    <Resource Include="imgTab\1_home\chamber door\unlock_on_btn.png" />
+    <Resource Include="imgTab\1_home\laser\laser on.png" />
+    <Resource Include="imgTab\1_home\laser\laser on_btn.png" />
+    <Resource Include="imgTab\1_home\laser\laser.png" />
+    <Resource Include="imgTab\1_home\laser\laser_btn.png" />
+    <Resource Include="imgTab\1_home\laser\power on_btn.png" />
+    <Resource Include="imgTab\1_home\laser\power.png" />
+    <Resource Include="imgTab\1_home\laser\power_btn.png" />
+    <Resource Include="imgTab\1_home\LED\led_baseshape.png" />
+    <Resource Include="imgTab\1_home\LED\look_off.png" />
+    <Resource Include="imgTab\1_home\LED\look_on.png" />
+    <Resource Include="imgTab\1_home\LED\on1.png" />
+    <Resource Include="imgTab\1_home\LED\on2.png" />
+    <Resource Include="imgTab\1_home\LED\on3.png" />
+    <Resource Include="imgTab\1_home\LED\onlight1L.png" />
+    <Resource Include="imgTab\1_home\LED\onlight1R.png" />
+    <Resource Include="imgTab\1_home\LED\onlight2L.png" />
+    <Resource Include="imgTab\1_home\LED\onlight2R.png" />
+    <Resource Include="imgTab\1_home\LED\onlight3L.png" />
+    <Resource Include="imgTab\1_home\LED\onlight3R.png" />
+    <Resource Include="imgTab\1_home\title_shape.png" />
+    <Resource Include="imgTab\2_gas\arrow_down_click.png" />
+    <Resource Include="imgTab\2_gas\arrow_up_click.png" />
+    <Resource Include="imgTab\2_gas\base shape.png" />
+    <Resource Include="imgTab\2_gas\botton_on.png" />
+    <Resource Include="imgTab\2_gas\box.png" />
+    <Resource Include="imgTab\2_gas\gas botten.png" />
+    <Resource Include="imgTab\2_gas\gas bottenOn.png" />
+    <Resource Include="imgTab\2_gas\gas bottenOn2.png" />
+    <Resource Include="imgTab\2_gas\gas bottenOn3.png" />
+    <Resource Include="imgTab\2_gas\gas bottenOn4.png" />
+    <Resource Include="imgTab\2_gas\GasBackground.png" />
+    <Resource Include="imgTab\2_gas\GasBackground_two.png" />
+    <Resource Include="imgTab\2_gas\gason.png" />
+    <Resource Include="imgTab\2_gas\off.png" />
+    <Resource Include="imgTab\2_gas\OKBTN.png" />
+    <Resource Include="imgTab\2_gas\on.png" />
+    <Resource Include="imgTab\2_gas\textbox.png" />
+    <Resource Include="imgTab\2_gas\textbox_on.png" />
+    <Resource Include="imgTab\2_gas\title shape.png" />
+    <Resource Include="imgTab\2_gas\이력팝업\baxk_Box.png" />
+    <Resource Include="imgTab\2_gas\이력팝업\monitor_btn_error.png" />
+    <Resource Include="imgTab\2_gas\이력팝업\monitor_btn_normal.png" />
+    <Resource Include="imgTab\2_gas\이력팝업\닫기.png" />
+    <Resource Include="imgTab\3_pump\+.png" />
+    <Resource Include="imgTab\3_pump\+click.png" />
+    <Resource Include="imgTab\3_pump\-.png" />
+    <Resource Include="imgTab\3_pump\-click.png" />
+    <Resource Include="imgTab\3_pump\baseshape.png" />
+    <Resource Include="imgTab\3_pump\baseshpe2.png" />
+    <Resource Include="imgTab\3_pump\botton.png" />
+    <Resource Include="imgTab\3_pump\box.png" />
+    <Resource Include="imgTab\3_pump\button on.png" />
+    <Resource Include="imgTab\3_pump\centerinfor.png" />
+    <Resource Include="imgTab\3_pump\filter bottom_on.png" />
+    <Resource Include="imgTab\3_pump\filter top_on.png" />
+    <Resource Include="imgTab\3_pump\filterbase.png" />
+    <Resource Include="imgTab\3_pump\pumpimage.png" />
+    <Resource Include="imgTab\3_pump\pumponHigh.png" />
+    <Resource Include="imgTab\3_pump\title box.png" />
+    <Resource Include="imgTab\3_pump\wind.png" />
+    <Resource Include="imgTab\3_pump\원형2.png" />
+    <Resource Include="imgTab\4_moter\box shape.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\boxon_buildroom.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\btn_home_bage.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\motor_alram.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\motor_alram_on.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\motor_btn_home_click.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\motor_btn_reset.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\motor_btn_reset_click.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\reset.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\textbox-click.png" />
+    <Resource Include="imgTab\4_moter\build-feed room\textbox.png" />
+    <Resource Include="imgTab\4_moter\buildroom_highright.png" />
+    <Resource Include="imgTab\4_moter\motor_bg.png" />
+    <Resource Include="imgTab\4_moter\motor_bg2.png" />
+    <Resource Include="imgTab\4_moter\motor_bg3.png" />
+    <Resource Include="imgTab\4_moter\move_popup\btn_close.png" />
+    <Resource Include="imgTab\4_moter\move_popup\btn_reset.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_down.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_down2.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_down_click.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_down_none.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_up.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_up2.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_up3.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_up_click.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_arrow_up_none.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_btn_goback.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_btn_goback2.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_btn_goback_click.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_btn_minus.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_btn_minus_click.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_btn_plus.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_btn_plus_click.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_popup_dot.png" />
+    <Resource Include="imgTab\4_moter\move_popup\motor_pop_bg.png" />
+    <Resource Include="imgTab\4_moter\move_popup\Popup_bg.png" />
+    <Resource Include="imgTab\4_moter\move_popup\SpeedMenu.png" />
+    <Resource Include="imgTab\4_moter\move_popup\textbox.png" />
+    <Resource Include="imgTab\4_moter\move_popup\새 폴더\motor_popup_arrow_down.png" />
+    <Resource Include="imgTab\4_moter\move_popup\새 폴더\motor_popup_arrow_down_click.png" />
+    <Resource Include="imgTab\4_moter\move_popup\새 폴더\motor_popup_arrow_down_none.png" />
+    <Resource Include="imgTab\4_moter\move_popup\새 폴더\motor_popup_arrow_up.png" />
+    <Resource Include="imgTab\4_moter\move_popup\새 폴더\motor_popup_arrow_up_click.png" />
+    <Resource Include="imgTab\4_moter\move_popup\새 폴더\motor_popup_arrow_up_none.png" />
+    <Resource Include="imgTab\4_moter\powderroom_highright.png" />
+    <Resource Include="imgTab\4_moter\powder\botten-click.png" />
+    <Resource Include="imgTab\4_moter\powder\botten.png" />
+    <Resource Include="imgTab\4_moter\powder\boxon_powder.png" />
+    <Resource Include="imgTab\4_moter\powder\case1.png" />
+    <Resource Include="imgTab\4_moter\powder\case2.png" />
+    <Resource Include="imgTab\4_moter\powder\POINT-highlight.png" />
+    <Resource Include="imgTab\4_moter\powder\POINT.png" />
+    <Resource Include="imgTab\4_moter\powder\text box.png" />
+    <Resource Include="imgTab\4_moter\powder\text_point.png" />
+    <Resource Include="imgTab\4_moter\recotor_highright.png" />
+    <Resource Include="imgTab\4_moter\title box.png" />
+    <Resource Include="imgTab\5_log\light-base.png" />
+    <Resource Include="imgTab\5_log\light-blue.png" />
+    <Resource Include="imgTab\5_log\light-red.png" />
+    <Resource Include="imgTab\5_log\monitor_btn_log.png" />
+    <Resource Include="imgTab\5_log\monitor_btn_log_click.png" />
+    <Resource Include="imgTab\5_log\text shape.png" />
+    <Resource Include="imgTab\6_printing\printing_finish.png" />
+    <Resource Include="imgTab\6_printing\printing_pause.png" />
+    <Resource Include="imgTab\6_printing\printing_start.png" />
+    <Resource Include="imgTab\6_printing\print_btn_back.png" />
+    <Resource Include="imgTab\6_printing\print_btn_back_click.png" />
+    <Resource Include="imgTab\6_printing\print_btn_delete.png" />
+    <Resource Include="imgTab\6_printing\print_btn_delete_click.png" />
+    <Resource Include="imgTab\6_printing\print_btn_delete_on.png" />
+    <Resource Include="imgTab\6_printing\print_btn_finish.png" />
+    <Resource Include="imgTab\6_printing\print_btn_pause_disable.png" />
+    <Resource Include="imgTab\6_printing\print_btn_pause_enable.png" />
+    <Resource Include="imgTab\6_printing\print_btn_reset.png" />
+    <Resource Include="imgTab\6_printing\print_btn_reset_click.png" />
+    <Resource Include="imgTab\6_printing\print_btn_resume.png" />
+    <Resource Include="imgTab\6_printing\print_btn_start_disable.png" />
+    <Resource Include="imgTab\6_printing\print_btn_start_enable.png" />
+    <Resource Include="imgTab\6_printing\print_btn_stop_disable.png" />
+    <Resource Include="imgTab\6_printing\print_btn_stop_enable.png" />
+    <Resource Include="imgTab\6_printing\prn_select_box_bage.png" />
+    <Resource Include="imgTab\6_printing\prn_select_box_red.png" />
+    <Resource Include="imgTab\6_printing\shape.png" />
+    <Resource Include="imgTab\6_printing\shape2.png" />
+    <Resource Include="imgTab\7_temperature\box shape.png" />
+    <Resource Include="imgTab\7_temperature\hum image.png" />
+    <Resource Include="imgTab\7_temperature\hum shape.png" />
+    <Resource Include="imgTab\7_temperature\hum.png" />
+    <Resource Include="imgTab\7_temperature\powder_bg.png" />
+    <Resource Include="imgTab\7_temperature\sensorhighlight.png" />
+    <Resource Include="imgTab\7_temperature\tem  image.png" />
+    <Resource Include="imgTab\7_temperature\tem shape.png" />
+    <Resource Include="imgTab\7_temperature\tem.png" />
+    <Resource Include="imgTab\7_temperature\TempShape.png" />
+    <Resource Include="imgTab\7_temperature\title shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgM500\motor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgM500\imgLeftArrow.png" />
+    <Resource Include="imgM500\imgLeftArrowDisable.png" />
+    <Resource Include="imgM500\imgRightArrow.png" />
+    <Resource Include="imgM500\imgRightArrowDisable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgM500\print_btn_stop_enable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgM500\print_btn_reset.png" />
+    <Resource Include="imgM500\print_btn_reset_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ucCommon\+click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgM500\print_btn_start_disable.png" />
+    <Resource Include="imgM500\print_btn_start_enable.png" />
+    <Resource Include="imgM500\print_btn_stop_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgM500\logout_btn_no.png" />
+    <Resource Include="imgM500\logout_btn_no_click.png" />
+    <Resource Include="imgM500\logout_btn_yes.png" />
+    <Resource Include="imgM500\logout_btn_yes_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgM500\logout_btn_yes_fix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTop\title_deagun_M500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMenu\autosupply1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMenu\autosupply10000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMenu\Chart9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMenu\setting_touch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMenu\setting_notouch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgMenu\Chart12.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.targets" Condition="Exists('..\packages\Microsoft.Extensions.Configuration.UserSecrets.5.0.0\build\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.targets')" />
+</Project>

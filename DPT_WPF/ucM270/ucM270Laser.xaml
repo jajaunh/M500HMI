@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="DPT_WPF.ucM270.ucM270Laser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="179" d:DesignWidth="222">
+    <Grid>
+        <Border Grid.Row="0" Grid.RowSpan="2" >
+            <Border.Background>
+                <ImageBrush ImageSource="/imgTab/1_home/laser/laser.png" />
+            </Border.Background>
+        </Border>
+        <Image x:Name="IMGlaser_on" Source="/DPT_WPF;component/imgTab/1_home/laser/laser on.png" Width="66" Height="42" Margin="0,109,0,0" Visibility="Collapsed"/>
+        <Image x:Name="IMGlaser_Power" Source="/DPT_WPF;component/imgTab/1_home/laser/power.png" Width="6" Height="80" Margin="0,25,0,0" Visibility="Collapsed"/>
+    </Grid>
+</UserControl>

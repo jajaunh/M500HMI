@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="DPT_WPF.ucM270.ucM270Gas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DPT_WPF.ucM270"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="912">
+    <Grid>
+        <Image x:Name="tabBackground" Source="/imgDevice/Device_Inner.png"/>
+        <Image x:Name="imgChamberGas" Source="/imgTab/2_gas/gason.png" Width="52" Height="68" Margin="320,90,540,320"/>
+    </Grid>
+</UserControl>

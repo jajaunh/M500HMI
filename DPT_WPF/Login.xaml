@@ -1,0 +1,175 @@
+﻿<Window x:Class="DPT_WPF.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DPT_WPF"
+        mc:Ignorable="d"
+        Title="Login" Height="1920" Width="1080" WindowStyle="None" HorizontalAlignment="Center" VerticalAlignment="Center" WindowState="Maximized" Closed="Window_Closed">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                        <Border x:Name="border" CornerRadius="0" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF33B5FF"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                            </Trigger>
+
+                            <Trigger Property="IsFocused" Value="False">
+                                <Setter Property="BorderBrush" Value="#FFE2E3EA"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="MyPasswordBox" TargetType="{x:Type PasswordBox}">
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Control}">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="0"  Name="psBorder">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" TargetName="psBorder" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FF33B5FF"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                            </Trigger>
+
+                            <Trigger Property="IsFocused" Value="False">
+                                <Setter Property="BorderBrush" Value="#FFE2E3EA"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="DefineGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="73"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="4" Margin="-1,-1,0,0">
+            <Grid.Background>
+                <ImageBrush  ImageSource="/imgLogin/login_bg.png" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Image x:Name="Logo" HorizontalAlignment="Center" Width="241" Height="72" Margin="0,336,0,0" VerticalAlignment="Top" Source="imgLogin/login_dpert_logo.png"/>
+            <!--<Image x:Name="Peek" HorizontalAlignment="Center" Width="387" Height="34" Margin="0,458,0,0" VerticalAlignment="Top" Source="imgLogin/DAEGUN PEEK140.png"/>-->
+            <TextBlock Text="DAEGUN M270" Foreground="#A8B2C8" FontSize="45" TextAlignment="Center" HorizontalAlignment="Center" Width="387" Height="60" Margin="0,458,0,0" VerticalAlignment="Top" FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold"/>
+
+            <TextBlock Text="Copyrightⓒ 2018 DAEGUN Co,. Ltd" VerticalAlignment="Bottom" Height="41"  FontSize="12" Foreground="#676767" TextAlignment="Center" TextWrapping="Wrap"/>
+
+        </Grid>
+        <Grid Width="529" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1.5*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="1">
+                        <TextBlock x:Name="LoginText" Text="Member Login" FontSize="48" Foreground="#d9e1ee" HorizontalAlignment="Center" FontFamily="/DPT_WPF;component/Font/#NanumSquare"/>
+
+                    </Grid>
+
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1.5*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="1">
+
+                        <TextBox x:Name="txtIp" Padding="35,0,0,0" Width="318" Height="41" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#8c99ad" FontSize="17" BorderBrush="#00000000" FontFamily="/DPT_WPF;component/Font/#NanumGothic" Text="ftp://192.168.255.227/" >
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="imgLogin/text_box_ip.png"/>
+                            </TextBox.Background>
+
+                        </TextBox>
+                        <Image Source="/imgLogin/icon_ip.png" Width="17" Height="17" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="120,0,0,0"/>
+
+                    </Grid>
+
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1.5*"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Grid Grid.Row="1">
+                        <TextBox x:Name="txtID"  Padding="35,0,0,0"  Width="318" Height="41" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#8c99ad" FontSize="17" BorderBrush="#000000" BorderThickness="0" SelectionOpacity="0" FontFamily="/DPT_WPF;component/Font/#NanumGothic" Text="ftpuser" >
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="imgLogin/text_box.png"/>
+                            </TextBox.Background>
+                        </TextBox>
+                        <Image Source="/imgLogin/icon_id.png" Width="17" Height="17" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="120,0,0,0"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1.5*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <PasswordBox x:Name="txtPassword" Style="{StaticResource MyPasswordBox}" PasswordChar="*" Padding="35,0,0,0" Width="318" Height="41" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF767676" FontSize="17" BorderBrush="Black" FontFamily="/DPT_WPF;component/Font/#NanumGothic" Password="ftpuser">
+                            <PasswordBox.Background>
+                                <ImageBrush ImageSource="/imgLogin/text_box.png"/>
+                            </PasswordBox.Background>
+                        </PasswordBox>
+                        <Image Source="/imgLogin/icon_pw.png" Width="17" Height="17" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="123,0,0,0"/>
+
+                    </Grid>
+
+                </Grid>
+
+                <Grid Grid.Row="4">
+                    <!--<CheckBox x:Name="chkRunProgram" Content="PC 작동시 HMI 자동 시작" HorizontalAlignment="Center" VerticalAlignment="Center" Click="CheckBox_Click" Width="158" Margin="186,88,185,19" Foreground="#8c99ad"/>-->
+                    <Image x:Name="btnLogin" Height="57" Width="153" Margin="0,0,0,30" MouseLeftButtonDown="btnLogin_MouseLeftButtonDown">
+                        <Image.Style>
+                            <Style>
+                                <Setter Property="Image.Source" Value="ImgLogin\btn_login.png" />
+                                <Style.Triggers>
+                                    <Trigger  Property="Image.IsMouseOver" Value="True">
+                                        <Setter Property="Image.Source" Value="ImgLogin\btn_login_click.png" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
