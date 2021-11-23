@@ -2300,6 +2300,7 @@ namespace DPT_WPF
 
         private void DockingConfirm()
         {
+
             (client).WriteValue(m500opcuri, "ns=6;s=::AsGlobalPV:gIntp.Input.Machine.Command.bDockingConfirm", true);
 
         }

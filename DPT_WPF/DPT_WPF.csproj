@@ -924,6 +924,12 @@
   <ItemGroup>
     <Resource Include="imgMenu\Chart12.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTab\7_temperature\hum shape2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgTab\3_pump\filterbase3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.1.2\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

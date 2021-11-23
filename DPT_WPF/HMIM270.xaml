@@ -95,7 +95,7 @@
                 </Image.InputBindings>
             </Image>-->
 
-            <Label Content="Override" 
+            <!--<Label Content="Override" 
                    FontSize="25" 
                    Foreground="#D3D5D9" 
                    FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold" 
@@ -125,7 +125,7 @@
                 <Image.InputBindings>
                     <MouseBinding Gesture="LeftClick" Command="{Binding OverrideUpCommand}"></MouseBinding>
                 </Image.InputBindings>
-            </Image>
+            </Image>-->
 
         </Grid>
 
@@ -208,7 +208,7 @@
                         <Image x:Name="powder_Light02" Source="imgTop/green light.png" Width="20" Height="20" HorizontalAlignment="Left" Margin="114,107,0,33"/>
                         <Image x:Name="powder_Light02_black" Source="imgTop/light.png" Width="8" Height="8" HorizontalAlignment="Left" Margin="120,113,0,39"/>
                     </Grid>
-                    <Grid Margin="31,-59,144,-22" Grid.ColumnSpan="2">
+                    <Grid Margin="37,-59,138,-22" Grid.ColumnSpan="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="243*"/>
                             <ColumnDefinition Width="298*"/>
@@ -980,8 +980,91 @@
                         </Style>
                     </TabItem.Resources>
                     <Grid>
-                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="10,54,10,616" Grid.RowSpan="1"/>
-                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="10,565,10,105" Grid.RowSpan="1"/>
+                        <!--seving sensor-->
+                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="-6,40,-2,617" Grid.RowSpan="1"/>
+                        <Grid>
+                            <Label x:Name="SvOxy1" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,157,751,961" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="234,171,637,980"/>
+                            <ProgressBar x:Name="sv1" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,962" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
+                            <Label x:Name="SvOxy2" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,290,751,828" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="234,305,637,846"/>
+                            <ProgressBar x:Name="sv2" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,828" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
+                            <Label x:Name="SvOxy3" Content="0" FontSize="40" Foreground="#eeeeee" Margin="24,434,751,684" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sieving Oxy" FontSize="18" Foreground="#eeeeee" Margin="234,449,637,702"/>
+                            <ProgressBar x:Name="sv3" Value="0" Minimum="0" Maximum="25"  Height="13" Width="200" Foreground="#D3D5D9" Margin="234,0,0,684" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
+                        </Grid>
+                        <!--seving btn-->
+                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="6,828,495,90"  />
+                        <Grid Margin="6,826,495,92">
+                            <Label Content="B U T T O N" FontSize="36" Foreground="#eeeeee" Margin="40,10,242,193"/>
+
+                            <Image x:Name="sv_powerbtn" Source="/imgTab/7_temperature/hum shape.png" Width="94" Height="92" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="40,0,345,82"/>
+                            <Image x:Name="sv_powerbtn_on" Source="/imgTab/7_temperature/hum shape2.png" Width="94" Height="92" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="40,0,345,76"/>
+                            <Label x:Name="sv_power" Content="POWER" FontSize="18" Foreground="#D3D5D9" FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="40,121,345,82" Height="59" Width="94">
+                                <Label.InputBindings>
+                                    <MouseBinding Gesture="LeftClick" Command="{}"/>
+                                </Label.InputBindings>
+                            </Label>
+
+                            <Image x:Name="sv_gasbtn" Source="/imgTab/7_temperature/hum shape.png" Width="94" Height="92" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="190,0,195,76"/>
+                            <Image x:Name="sv_gasbtn_on" Source="/imgTab/7_temperature/hum shape2.png" Width="94" Height="92" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="190,0,195,76"/>
+                            <Label x:Name="sv_gas" Content="GAS" FontSize="18" Foreground="#D3D5D9" FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="188,121,197,82" Height="59" Width="94">
+                                <Label.InputBindings>
+                                    <MouseBinding Gesture="LeftClick" Command="{}"/>
+                                </Label.InputBindings>
+                            </Label>
+
+                            <Image x:Name="sv_supplybtn" Source="/imgTab/7_temperature/hum shape.png" Width="94" Height="92" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="335,0,50,76"/>
+                            <Image x:Name="sv_supplybtn_on" Source="/imgTab/7_temperature/hum shape2.png" Width="94" Height="92" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="335,0,50,76"/>
+                            <Label x:Name="sv_supply" Content="SUPPLY" FontSize="18" Foreground="#D3D5D9" FontFamily="/DPT_WPF;component/Font/#NanumSquare Bold" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="335,121,50,82" Height="59" Width="94">
+                                <Label.InputBindings>
+                                    <MouseBinding Gesture="LeftClick" Command="{}"/>
+                                </Label.InputBindings>
+                            </Label>
+                        </Grid>
+                        <!--seving filter-->
+                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="500,552,12,82"  />
+                        <Grid Margin="500,550,18,96">
+                            <Label Content="F I L T E R" FontSize="36" Foreground="#eeeeee" Margin="38,27,232,436"/>
+                            <Image Source="/imgTab/3_pump/filterbase3.png" Margin="172,326,166,45"  Stretch="Fill"/>
+                            <Label x:Name="SdiffPer_main"  Content="  0%" FontSize="40" Foreground="Gray" Margin="182,396,176,72" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Main Filter" FontSize="20" HorizontalAlignment="Center" Foreground="#eeeeee" Margin="172,484,166,8"/>
+
+                            <Image Source="/imgTab/3_pump/filterbase3.png" Margin="172,103,166,268"  Stretch="Fill"/>
+                            <Label x:Name="SdiffPer_sub"  Content="  0%" FontSize="40" Foreground="Gray" Margin="182,172,176,295" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                            <Label Content="Sub Filter" FontSize="20" HorizontalAlignment="Center" Foreground="#eeeeee" Margin="188,266,182,226"/>
+                        </Grid>
+                        <!--seiving alarm-->
+                        <Image Source="/imgTab/3_pump/box.png" Stretch="Fill" Margin="6,563,495,355"  />
+                        <Grid Margin="10,555,495,363">
+                            <Label Content="A L A R M" FontSize="36" Foreground="#eeeeee" Margin="34,24,248,180"/>
+                            <Image x:Name="sv_alarm1" Source="/imgTab/4_moter/build-feed room/motor_alram.png" Stretch="Uniform" Margin="66,104,343,98" />
+                            <Image x:Name="sv_alarm2" Source="/imgTab/4_moter/build-feed room/motor_alram.png" Stretch="Uniform" Margin="211,104,197,98" />
+                            <Image x:Name="sv_alarm3" Source="/imgTab/4_moter/build-feed room/motor_alram.png" Stretch="Uniform" Margin="350,104,57,98" />
+
+                            <Image x:Name="sv_alarm_on1" Source="/imgTab/4_moter/build-feed room/motor_alram_on.png" Stretch="Uniform" Margin="34,82,311,75" Visibility="Collapsed">
+                                <Image.InputBindings>
+                                    <MouseBinding Gesture="LeftClick" Command="{}"/>
+                                </Image.InputBindings>
+                            </Image>
+                            <Image x:Name="sv_alarm_on2" Source="/imgTab/4_moter/build-feed room/motor_alram_on.png" Stretch="Uniform" Margin="171,82,159,75" Visibility="Collapsed">
+                                <Image.InputBindings>
+                                    <MouseBinding Gesture="LeftClick" Command="{}"/>
+                                </Image.InputBindings>
+                            </Image>
+                            <Image x:Name="sv_alarm_on3" Source="/imgTab/4_moter/build-feed room/motor_alram_on.png" Stretch="Uniform" Margin="319,82,26,75" Visibility="Collapsed" >
+                                <Image.InputBindings>
+                                    <MouseBinding Gesture="LeftClick" Command="{}"/>
+                                </Image.InputBindings>
+                            </Image>
+
+                            <Label Content="SCREW 1" FontSize="16" Foreground="#eeeeee" Margin="62,172,333,54" />
+                            <Label Content="SCREW 2" FontSize="16" Foreground="#eeeeee" Margin="207,172,188,54" />
+                            <Label Content="SCREW 3" FontSize="16" Foreground="#eeeeee" Margin="346,172,47,54" />
+                        </Grid>
                     </Grid>
                 </TabItem>
                 <!-- Printing -->
